@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum ServiceError: Error {
+    case invalidURL
+    case decodeFail(Error?)
+    case network(Error?)
+}
+

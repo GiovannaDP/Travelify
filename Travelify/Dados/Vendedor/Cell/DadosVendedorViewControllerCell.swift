@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import UIKit
+
+protocol DadosVendedorCellControllerDelegate: AnyObject {
+    func didSelectView()
+}
+
+
+class DadosVendedorViewControllerCell: UITableViewCell {
+    
+    private var customView: DadosVendedorScreenViewCell = DadosVendedorScreenViewCell()
+    
+    weak var delegate: DadosVendedorCellControllerDelegate?
+
+}
+

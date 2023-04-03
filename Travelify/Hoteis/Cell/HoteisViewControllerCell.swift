@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import UIKit
+
+protocol HoteisViewControllerCell: AnyObject {
+    func didSelectView(_ viagem: PacotesModel?)
+}
+
+class HoteisCellController: UITableViewCell {
+    
+    private var customView: HoteisScreenViewCell = HoteisScreenViewCell()
+    
+    weak var delegate: HoteisViewControllerCell?
+
+}
+
+
