@@ -23,7 +23,7 @@ struct UserResponse: Codable {
     let flights: [VoosModel.Voo]
     let packages: [PacotesModel.Pacote]
     let messages: [Messages]
-    let error: String
+    let error: String?
     
     enum CodingKeys: String, CodingKey {
         case userId = "id"
