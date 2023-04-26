@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +13,58 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rXh-6S-gl4">
+                                <rect key="frame" x="46.666666666666657" y="275.33333333333337" width="300" height="301.33333333333326"/>
+                                <color key="tintColor" name="textComponent"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="F7y-hJ-KyT"/>
+                                    <constraint firstAttribute="height" constant="300" id="StS-Pm-eOU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travelify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUS-6K-UKK">
+                                <rect key="frame" x="20" y="209" width="353" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="uaR-w4-Gxy">
+                                <rect key="frame" x="76.666666666666686" y="336" width="240" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="lQG-dd-yk8"/>
+                                    <constraint firstAttribute="height" constant="180" id="uSS-yF-Lra"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroungColor"/>
+                        <constraints>
+                            <constraint firstItem="rXh-6S-gl4" firstAttribute="top" secondItem="VUS-6K-UKK" secondAttribute="bottom" constant="20" id="47h-Lf-28O"/>
+                            <constraint firstItem="uaR-w4-Gxy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="B5R-7z-TCF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VUS-6K-UKK" secondAttribute="trailing" constant="20" id="EPm-qW-mGR"/>
+                            <constraint firstItem="rXh-6S-gl4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MFf-Kf-1va"/>
+                            <constraint firstItem="VUS-6K-UKK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ste-KS-eZ7"/>
+                            <constraint firstItem="VUS-6K-UKK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="TOq-Yr-Cg1"/>
+                            <constraint firstItem="rXh-6S-gl4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a55-FU-VD8"/>
+                            <constraint firstItem="uaR-w4-Gxy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aeT-1U-iXp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="seal.fill" catalog="system" width="128" height="124"/>
+        <image name="travel" width="512" height="512"/>
+        <namedColor name="backgroungColor">
+            <color red="0.39215686274509803" green="0.66274509803921566" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textComponent">
+            <color red="0.90600001811981201" green="0.95300000905990601" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

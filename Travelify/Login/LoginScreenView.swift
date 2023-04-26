@@ -33,7 +33,7 @@ class LoginScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.text = "Travel"
+        label.text = "Travelify"
         label.font = UIFont(name: "IowanOldStyle-Bold", size: 32)
         label.textColor = .white
         return label
