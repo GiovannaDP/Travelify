@@ -168,6 +168,7 @@ class CadastroScreenView: UIView {
             self.usernameText.topAnchor.constraint(equalTo: self.usernameLabel.topAnchor, constant: 25),
             self.usernameText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.usernameText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.usernameText.heightAnchor.constraint(equalToConstant: 30),
             
             self.nameLabel.topAnchor.constraint(equalTo: self.usernameText.topAnchor, constant: 40),
             self.nameLabel.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
@@ -176,6 +177,7 @@ class CadastroScreenView: UIView {
             self.nameText.topAnchor.constraint(equalTo: self.nameLabel.topAnchor, constant: 25),
             self.nameText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.nameText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.nameText.heightAnchor.constraint(equalToConstant: 30),
             
             self.emailLabel.topAnchor.constraint(equalTo: self.nameText.topAnchor, constant: 40),
             self.emailLabel.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
@@ -184,6 +186,7 @@ class CadastroScreenView: UIView {
             self.emailText.topAnchor.constraint(equalTo: self.emailLabel.topAnchor, constant: 25),
             self.emailText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.emailText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.emailText.heightAnchor.constraint(equalToConstant: 30),
             
             self.phoneLabel.topAnchor.constraint(equalTo: self.emailText.topAnchor, constant: 40),
             self.phoneLabel.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
@@ -192,6 +195,7 @@ class CadastroScreenView: UIView {
             self.phoneText.topAnchor.constraint(equalTo: self.phoneLabel.topAnchor, constant: 25),
             self.phoneText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.phoneText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.phoneText.heightAnchor.constraint(equalToConstant: 30),
             
             self.passwordLabel.topAnchor.constraint(equalTo: self.phoneText.topAnchor, constant: 40),
             self.passwordLabel.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
@@ -200,6 +204,7 @@ class CadastroScreenView: UIView {
             self.passwordText.topAnchor.constraint(equalTo: self.passwordLabel.topAnchor, constant: 25),
             self.passwordText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.passwordText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.passwordText.heightAnchor.constraint(equalToConstant: 30),
             
             self.cadastroButton.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 100),
             self.cadastroButton.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -100),
