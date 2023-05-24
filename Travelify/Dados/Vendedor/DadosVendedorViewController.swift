@@ -22,6 +22,7 @@ class DadosVendedorViewController: UIViewController {
     func buildView() {
         view = DadosVendedorScreenView()
         customView = view as? DadosVendedorScreenView
+        customView?.nomeUsuarioLabel.text = UserViewModel.body.name
     }
     
     func configuraTableView() {
@@ -44,7 +45,7 @@ extension DadosVendedorViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -52,7 +53,6 @@ extension DadosVendedorViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
             
         guard let celula = tableView.dequeueReusableCell(withIdentifier: "DadosDoVendedorCell", for: indexPath) as? DadosVendedorScreenViewCell else {
             fatalError("error to create ViagemTableViewCell")
@@ -62,17 +62,14 @@ extension DadosVendedorViewController: UITableViewDataSource {
         case 0:
             celula.configuraInfo(icon: "folder.badge.person.crop", info: "Seus dados")
         case 1:
-            celula.configuraInfo(icon: "bag.circle", info: "Suas vendas")
-        case 2:
             celula.configuraInfo(icon: "message.circle", info: "Suas mensagens")
-        case 3:
+        case 2:
             celula.configuraInfo(icon: "return.left", info: "Sair")
         default:
             break
         }
         
         return celula
-        
     }
 }
 
@@ -81,20 +78,15 @@ extension DadosVendedorViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let vc = PerfilUsuarioController()
+            let vc = PerfilVendedorViewController()
             navigationController?.pushViewController(vc, animated: true)
         case 1:
-            let vc = VendasViewController()
-            navigationController?.pushViewController(vc, animated: true)
-        case 2:
             let vc = MensagensVendedorViewController()
             navigationController?.pushViewController(vc, animated: true)
-        case 3:
+        case 2:
             sairDoApp()
         default:
             break
         }
     }
-    
 }
-

@@ -18,6 +18,4 @@ class DadosVendedorViewControllerCell: UITableViewCell {
     private var customView: DadosVendedorScreenViewCell = DadosVendedorScreenViewCell()
     
     weak var delegate: DadosVendedorCellControllerDelegate?
-
 }
-

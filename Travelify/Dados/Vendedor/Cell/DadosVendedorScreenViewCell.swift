@@ -16,7 +16,6 @@ class DadosVendedorScreenViewCell: UITableViewCell {
         
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -38,7 +37,6 @@ class DadosVendedorScreenViewCell: UITableViewCell {
         return image
     }()
     
-    
     lazy var mainLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +56,6 @@ class DadosVendedorScreenViewCell: UITableViewCell {
         mainView.addSubview(mainLabel)
     }
     
-    
     func configuraConstraints(){
         NSLayoutConstraint.activate([
             self.mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
@@ -77,4 +74,3 @@ class DadosVendedorScreenViewCell: UITableViewCell {
             ])
         }
 }
-

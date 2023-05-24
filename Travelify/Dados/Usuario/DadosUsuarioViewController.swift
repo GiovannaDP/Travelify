@@ -21,6 +21,7 @@ class DadosUsuarioViewController: UIViewController {
     func buildView() {
         view = DadosUsuarioScreenView()
         customView = view as? DadosUsuarioScreenView
+        customView?.nomeUsuarioLabel.text = UserViewModel.body.name
     }
     
     func configuraTableView() {
@@ -43,7 +44,7 @@ extension DadosUsuarioViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -52,7 +53,6 @@ extension DadosUsuarioViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-            
         guard let celula = tableView.dequeueReusableCell(withIdentifier: "DadosDoUsuarioCell", for: indexPath) as? DadosUsuarioScreenViewCell else {
             fatalError("error to create ViagemTableViewCell")
         }
@@ -65,15 +65,12 @@ extension DadosUsuarioViewController: UITableViewDataSource {
         case 2:
             celula.configuraInfo(icon: "bag.circle", info: "Suas compras")
         case 3:
-            celula.configuraInfo(icon: "cart.fill", info: "Seu carrinho")
-        case 4:
             celula.configuraInfo(icon: "return.left", info: "Sair")
         default:
             break
         }
         
         return celula
-        
     }
 }
 
@@ -82,19 +79,18 @@ extension DadosUsuarioViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            debugPrint("0")
+            let vc = PerfilUsuarioController()
+            self.navigationController?.pushViewController(vc, animated: true)
         case 1:
-            debugPrint("1")
+            let vc = FavoritosViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         case 2:
-            debugPrint("2")
+            let vc = SuasComprasViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         case 3:
-            debugPrint("3")
-        case 4:
             sairDoApp()
         default:
             break
         }
     }
-    
 }
-

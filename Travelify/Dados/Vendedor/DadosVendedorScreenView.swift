@@ -15,7 +15,6 @@ class DadosVendedorScreenView: UIView {
         backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -51,7 +50,7 @@ class DadosVendedorScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.text = "Giovanna"
+        label.text = ""
         label.font = UIFont(name: "Kailasa-Bold", size: 25)
         label.textColor = .white
         return label
@@ -72,7 +71,6 @@ class DadosVendedorScreenView: UIView {
         mainView.addSubview(tableView)
     }
 
-    
     func configuraConstraints(){
         NSLayoutConstraint.activate([
             self.mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
@@ -98,4 +96,3 @@ class DadosVendedorScreenView: UIView {
             ])
         }
 }
-

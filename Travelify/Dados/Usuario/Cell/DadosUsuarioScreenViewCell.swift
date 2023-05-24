@@ -16,7 +16,6 @@ class DadosUsuarioScreenViewCell: UITableViewCell {
         
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -58,7 +57,6 @@ class DadosUsuarioScreenViewCell: UITableViewCell {
         mainView.addSubview(mainLabel)
     }
     
-    
     func configuraConstraints(){
         NSLayoutConstraint.activate([
             self.mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
@@ -77,4 +75,3 @@ class DadosUsuarioScreenViewCell: UITableViewCell {
             ])
         }
 }
-
