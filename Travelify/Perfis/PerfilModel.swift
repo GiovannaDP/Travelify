@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct PerfilModel: Codable {
+    let email, name, password, phone: String
+    let id: Int
+}

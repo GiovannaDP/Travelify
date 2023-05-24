@@ -10,11 +10,12 @@ import UIKit
 
 class PerfilUsuarioController: UIViewController {
     
-    private var customView: PerfilUsuarioView? = nil
+    private var customView: PerfilUsuarioScreenView? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
+        setupItens()
         
         let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
         rightItem.tintColor = .white
@@ -23,13 +24,19 @@ class PerfilUsuarioController: UIViewController {
     }
     
     func buildView() {
-        view = PerfilUsuarioView()
-        customView = view as? PerfilUsuarioView
+        view = PerfilUsuarioScreenView()
+        customView = view as? PerfilUsuarioScreenView
     }
     
     @objc func rightItemTapped() {
         debugPrint("teste")
         navigateToMenuVendedor()
     }
+    
+    func setupItens() {
+        customView?.nameText.text = UserViewModel.body.name
+        customView?.usernameText.text = UserViewModel.body.username
+        customView?.emailText.text = UserViewModel.body.email
+        customView?.phoneText.text = UserViewModel.body.phone
+    }
 }
-
