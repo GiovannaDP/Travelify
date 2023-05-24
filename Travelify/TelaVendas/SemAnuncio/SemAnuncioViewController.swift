@@ -27,9 +27,15 @@ class SemAnuncioViewController: UIViewController {
     func buildView() {
         view = SemAnuncioScreenView()
         customView = view as? SemAnuncioScreenView
+        customView?.cadastroAnuncioButton.addTarget(self, action: #selector(cadastro), for: .touchUpInside)
     }
     
     @objc func rightItemTapped() {
         navigateToMenuVendedor()
+    }
+    
+    @objc func cadastro(_ sender: UIButton) {
+        let vc = EscolhaTipoCriacaoViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

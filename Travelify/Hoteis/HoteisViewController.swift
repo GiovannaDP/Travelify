@@ -25,7 +25,6 @@ class HoteisViewController: UIViewController {
         super.viewDidLoad()
         buildView()
         configuraView()
-        
     }
     
     func buildView() {
@@ -55,8 +54,7 @@ class HoteisViewController: UIViewController {
     @objc func reservarHotel(_ sender: UIButton) {
         let vc = TelaConfirmacaoViewController()
         guard let hotel = hotel else { return }
-        let user = UserViewModel.User(id: 3, username: "00000000000", name: "Julia Valente", profileType: "CPF", email: "juliavalente@gmail.com", phone: "16999999999", hotels: [], flights: [], packages: [], messages: [], error: "")
-        vc.instanciar(user: user, hotel: hotel)
+        vc.instanciar(hotel: hotel)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -15,7 +15,6 @@ class SemAnuncioScreenView: UIView {
         backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -74,7 +73,6 @@ class SemAnuncioScreenView: UIView {
         return button
     }()
     
-        
     func setupView() {
         addSubview(mainView)
         mainView.addSubview(titleLabel)
@@ -86,7 +84,6 @@ class SemAnuncioScreenView: UIView {
         
         cadastroAnuncioButton.underline()
     }
-
     
     func configuraConstraints(){
         NSLayoutConstraint.activate([
@@ -115,7 +112,6 @@ class SemAnuncioScreenView: UIView {
             self.cadastroAnuncioButton.leadingAnchor.constraint(equalTo: secondView.leadingAnchor),
             self.cadastroAnuncioButton.trailingAnchor.constraint(equalTo: secondView.trailingAnchor),
             self.cadastroAnuncioButton.bottomAnchor.constraint(equalTo: secondView.bottomAnchor, constant: -20)
-            
             ])
         }
 }
