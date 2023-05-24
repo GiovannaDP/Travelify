@@ -10,7 +10,6 @@ import UIKit
 
 class TelaInicialViewController: UIViewController{
     
-
     private var customView: TelaInicialScreenView? = nil
     private var button: String? = nil
     private var pacotesModel: [PacotesModel.Pacote?] = []
@@ -30,7 +29,6 @@ class TelaInicialViewController: UIViewController{
         self.navigationItem.leftBarButtonItem = leftItem
         
         view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -156,6 +154,13 @@ class TelaInicialViewController: UIViewController{
         }
     }
     
+    func irParaDetalhesPacote(_ viagem: PacotesModel.Pacote?) {
+        if let viagemSelecionada = viagem {
+            let pacoteController = PacotesViewController.instanciar(viagemSelecionada)
+            navigationController?.pushViewController(pacoteController, animated: true)
+        }
+    }
+    
     @objc func rightItemTapped() {
         navigateToMenuUsuario()
     }
@@ -238,11 +243,9 @@ extension TelaInicialViewController: UITableViewDelegate {
             irParaDetalhesHotel(viewModel)
         case "pacotes":
             let viewModel = pacotesModel[indexPath.row]
+            irParaDetalhesPacote(viewModel)
         default:
             debugPrint("outros")
         }
-        
     }
-    
 }
-

@@ -12,7 +12,6 @@ class PopupScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        //        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
         setupView()
         configuraConstraints()
     }
@@ -27,7 +26,6 @@ class PopupScreenView: UIView {
         view.backgroundColor = UIColor(named: "backgroungColor")
         return view
     }()
-    
     
     lazy var contentView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
@@ -45,7 +43,6 @@ class PopupScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
     
     lazy var confirmButton: UIButton = {
         let button = UIButton()
@@ -100,4 +97,3 @@ class PopupScreenView: UIView {
         ])
     }
 }
-

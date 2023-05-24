@@ -283,9 +283,6 @@ class TelaConfirmacaoScreenView: UIView {
             self.confirmarButton.widthAnchor.constraint(equalToConstant: 150),
             self.confirmarButton.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
             self.confirmarButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            
         ])
         }
 }
-
-

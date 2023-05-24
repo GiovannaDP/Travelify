@@ -11,7 +11,6 @@ import UIKit
 class TelaConfirmacaoViewController: UIViewController {
     
     private var customView: TelaConfirmacaoScreenView? = nil
-    private var userModel: UserViewModel.User? = nil
     private var vooModel: VoosModel.Voo? = nil
     private var hotelModel: HoteisModel.Hotel? = nil
     private var pacoteModel: PacotesModel.Pacote? = nil
@@ -26,10 +25,6 @@ class TelaConfirmacaoViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = rightItem
         chooseSetupView()
         setupItens()
-        debugPrint("####### \(userModel)")
-        debugPrint("####### \(vooModel)")
-        debugPrint("####### \(hotelModel)")
-        debugPrint("####### \(pacoteModel)")
     }
     
     func chooseSetupView() {
@@ -49,8 +44,7 @@ class TelaConfirmacaoViewController: UIViewController {
         customView?.confirmarButton.addTarget(self, action: #selector(confirmar), for: .touchUpInside)
     }
     
-    func instanciar(user: UserViewModel.User, voo: VoosModel.Voo? = nil, hotel: HoteisModel.Hotel? = nil, pacote: PacotesModel.Pacote? = nil) {
-        self.userModel = user
+    func instanciar(voo: VoosModel.Voo? = nil, hotel: HoteisModel.Hotel? = nil, pacote: PacotesModel.Pacote? = nil) {
         self.vooModel = voo
         self.hotelModel = hotel
         self.pacoteModel = pacote
@@ -68,8 +62,15 @@ class TelaConfirmacaoViewController: UIViewController {
     
     @objc func confirmar(_ sender: UIButton) {
         let vc = PopupViewController()
-        navigationController?.present(vc, animated: true)
-        debugPrint("clicou em confirmar")
+        vc.instanciar(voo: vooModel, hotel: hotelModel, pacote: pacoteModel)
+        vc.modalTransitionStyle = .coverVertical
+        
+        let transicao = CATransition()
+        transicao.duration = 0.3
+        transicao.type = CATransitionType.moveIn
+        transicao.subtype = CATransitionSubtype.fromTop
+        navigationController?.view.layer.add(transicao, forKey: kCATransition)
+        navigationController?.pushViewController(vc, animated: false)
     }
     
     func setupViewVoo() {
@@ -94,11 +95,10 @@ class TelaConfirmacaoViewController: UIViewController {
     }
     
     func setupItens() {
-        guard let user = userModel else { return }
-        customView?.nomeCompletoText.text = user.name
-        customView?.cpfText.text = user.username
-        customView?.emailText.text = user.email
-        customView?.phoneText.text = user.phone
+        customView?.nomeCompletoText.text = UserViewModel.body.name
+        customView?.cpfText.text = UserViewModel.body.username
+        customView?.emailText.text = UserViewModel.body.email
+        customView?.phoneText.text = UserViewModel.body.phone
         
         if let voo = vooModel {
             customView?.origemDestinoText.text = "\(voo.origin) -> \(voo.destiny)"
@@ -115,4 +115,3 @@ class TelaConfirmacaoViewController: UIViewController {
         }
     }
 }
-

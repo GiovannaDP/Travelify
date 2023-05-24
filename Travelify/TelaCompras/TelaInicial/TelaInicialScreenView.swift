@@ -17,7 +17,6 @@ class TelaInicialScreenView: UIView {
         setupView()
         setupItens()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -88,7 +87,6 @@ class TelaInicialScreenView: UIView {
         headerView.addSubview(buttonVoos)
         headerView.addSubview(buttonHoteis)
         firstView.addSubview(tableView)
-
     }
     
     func setupItens() {
@@ -125,9 +123,6 @@ class TelaInicialScreenView: UIView {
             self.tableView.leadingAnchor.constraint(equalTo: firstView.leadingAnchor),
             self.tableView.trailingAnchor.constraint(equalTo: firstView.trailingAnchor),
             self.tableView.bottomAnchor.constraint(equalTo: firstView.bottomAnchor),
-            
             ])
-            
         }
 }
-
