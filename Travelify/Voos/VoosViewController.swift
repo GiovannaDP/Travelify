@@ -33,13 +33,15 @@ class VoosViewController: UIViewController {
     }
     
     func configuraView() {
+        
+        guard let vagas = voo?.availableSeats else { return }
         customView?.titleLabel.text = voo?.name ?? ""
-        customView?.imageView.image = UIImage(named: voo?.images[0].image ?? "Londres-1")
+        customView?.imageView.image = UIImage(named: voo?.images[0]?.image ?? "Londres-1")
         customView?.tituloVooLabel.text = voo?.destiny
         customView?.origemLabel.text = voo?.origin
         customView?.departureDateLabel.text = voo?.departureDate
         customView?.returnDateLabel.text = voo?.returnDate
-        customView?.vagasRestantesLabel.text = "Vagas restantes: \(voo?.availableSeats ?? "")"
+        customView?.vagasRestantesLabel.text = "Vagas restantes: \(vagas)"
         customView?.precoLabel.text = "R$\(voo?.price ?? 0)"
         customView?.classeLabel.text = voo?.classType
     }
@@ -47,8 +49,7 @@ class VoosViewController: UIViewController {
     @objc func comprarVoo(_ sender: UIButton) {
         let vc = TelaConfirmacaoViewController()
         guard let voo = voo else { return }
-        let user = UserViewModel.User(id: 3, username: "00000000000", name: "Julia Valente", profileType: "CPF", email: "juliavalente@gmail.com", phone: "16999999999", hotels: [], flights: [], packages: [], messages: [], error: "")
-        vc.instanciar(user: user, voo: voo)
+        vc.instanciar(voo: voo)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

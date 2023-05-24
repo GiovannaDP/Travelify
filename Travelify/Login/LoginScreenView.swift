@@ -134,6 +134,7 @@ class LoginScreenView: UIView {
             self.usernameText.topAnchor.constraint(equalTo: self.usernameLabel.topAnchor, constant: 25),
             self.usernameText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.usernameText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.usernameText.heightAnchor.constraint(equalToConstant: 30),
             
             self.passwordLabel.topAnchor.constraint(equalTo: self.usernameText.topAnchor, constant: 40),
             self.passwordLabel.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
@@ -142,6 +143,7 @@ class LoginScreenView: UIView {
             self.passwordText.topAnchor.constraint(equalTo: self.passwordLabel.topAnchor, constant: 25),
             self.passwordText.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 20),
             self.passwordText.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -20),
+            self.passwordText.heightAnchor.constraint(equalToConstant: 30),
             
             self.loginButton.topAnchor.constraint(equalTo: self.passwordText.topAnchor, constant: 60),
             self.loginButton.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 100),

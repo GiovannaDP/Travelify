@@ -18,11 +18,11 @@ enum VoosModel {
         let departureDate: String
         let returnDate: String
         let favored: Bool
-        let images: [Imagens]
+        let images: [Imagens?]
         let airline: String
         let price: Double
-        let availableSeats: String?
-        let additional: [Adicionais]?
+        let availableSeats: Int?
+        let additional: [Adicionais?]
         let classType: String
         let error: String?
     
@@ -47,8 +47,8 @@ enum VoosModel {
     
     struct Adicionais: Codable {
         let id: Int
-        let title: Bool
-        let information: Bool
+        let title: String
+        let information: String
         
         enum CodingKeys: String, CodingKey {
             case id

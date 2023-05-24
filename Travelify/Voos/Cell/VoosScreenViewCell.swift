@@ -110,9 +110,12 @@ class VoosScreenViewCell: UITableViewCell {
     }
     
     func configuraCelula(_ viagem: VoosModel.Voo?) {
-        firstImageView.image = UIImage(named: viagem?.images[0].image ?? "")
-        tituloVooLabel.text = viagem?.destiny ?? ""
-        vagasRestantesLabel.text = "\(viagem?.availableSeats ?? "") vagas restantes"
+        
+        guard let vagas = viagem?.availableSeats else { return }
+        
+        firstImageView.image = UIImage(named: viagem?.images[0]?.image ?? "")
+        tituloVooLabel.text = viagem?.name ?? ""
+        vagasRestantesLabel.text = "\(vagas) vagas restantes"
         departureDateLabel.text = viagem?.departureDate ?? ""
         returnDateLabel.text = viagem?.returnDate ?? ""
         precoLabel.text = "R$\(viagem?.price ?? 0)"

@@ -15,7 +15,6 @@ class FavoritosScreenView: UIView {
         backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -38,16 +37,12 @@ class FavoritosScreenView: UIView {
         label.textColor = .white
         return label
     }()
-    
 
-    
-        
     func setupView() {
         addSubview(mainView)
         mainView.addSubview(titleLabel)
     }
 
-    
     func configuraConstraints(){
         NSLayoutConstraint.activate([
             self.mainView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),

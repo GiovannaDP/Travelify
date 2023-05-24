@@ -44,13 +44,18 @@ class LoginViewController: UIViewController {
         model = LoginModel(password: unmaskedString as String, username: username)
     }
     
-    func navigateToApp(user: UserResponse) {
-        if user.profileType == "CPF" {
+    func navigateToApp() {
+        if UserViewModel.body.profileType == "CPF" {
             let pacotes = TelaInicialViewController()
             self.navigationController?.pushViewController(pacotes, animated: true)
         } else {
-            let telaInicialVendas = SemAnuncioViewController()
-            self.navigationController?.pushViewController(telaInicialVendas, animated: true)
+            if !UserViewModel.body.flights.isEmpty || !UserViewModel.body.hotels.isEmpty || !UserViewModel.body.packages.isEmpty {
+                let telaInicialVendasComAnuncios = ComAnuncioViewController()
+                self.navigationController?.pushViewController(telaInicialVendasComAnuncios, animated: true)
+            } else {
+                let telaInicialVendasSemAnuncios = SemAnuncioViewController()
+                self.navigationController?.pushViewController(telaInicialVendasSemAnuncios, animated: true)
+            }
         }
     }
     
@@ -72,9 +77,8 @@ class LoginViewController: UIViewController {
                         case let .success(data):
                             userResponse = data as! UserResponse
                             guard let model = userResponse else { return }
-                            UserViewModel.User(id: model.userId, username: model.username, name: model.name, profileType: model.profileType, email: model.email, phone: model.phone, hotels: model.hotels, flights: model.flights, packages: model.packages, messages: [UserViewModel.Messages(id: model.messages.first?.id ?? 0, message: model.messages.first?.message ?? "")], error: model.error)
-                            navigateToApp(user: model)
-                            print(data, model.name)
+                            UserViewModel.body = model
+                            navigateToApp()
                         }
                     }
                 })

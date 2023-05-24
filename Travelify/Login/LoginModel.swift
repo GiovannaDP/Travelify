@@ -13,24 +13,26 @@ struct LoginModel: Codable {
 }
 
 struct UserResponse: Codable {
-    let userId: Int
+    let id: Int
     let name: String
     let profileType: String
     let username: String
     let email: String
+    let password: String
     let phone: String
-    let hotels: [HoteisModel.Hotel]
-    let flights: [VoosModel.Voo]
-    let packages: [PacotesModel.Pacote]
-    let messages: [Messages]
+    let hotels: [HoteisModel.Hotel?]
+    let flights: [VoosModel.Voo?]
+    let packages: [PacotesModel.Pacote?]
+    let messages: [Messages?]
     let error: String?
     
     enum CodingKeys: String, CodingKey {
-        case userId = "id"
+        case id
         case name
         case profileType
         case username
         case email
+        case password
         case phone
         case hotels
         case flights
