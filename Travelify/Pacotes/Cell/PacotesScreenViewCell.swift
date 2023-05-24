@@ -16,7 +16,6 @@ class PacotesScreenViewCell: UITableViewCell {
         
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -135,7 +134,7 @@ class PacotesScreenViewCell: UITableViewCell {
         departureDateLabel.text = viagem?.departureDate ?? ""
         returnDateLabel.text = viagem?.returnDate ?? ""
         precoLabel.text = "R$\(viagem?.price ?? "")"
-        vagasLabel.text = "\(viagem?.available ?? 0)"
+        vagasLabel.text = "\(viagem?.flight.availableSeats ?? 0)"
         
         DispatchQueue.main.async {
             self.mainView.addSombra()
@@ -174,10 +173,6 @@ class PacotesScreenViewCell: UITableViewCell {
             
             self.vagasLabel.centerYAnchor.constraint(equalTo: precoLabel.centerYAnchor),
             self.vagasLabel.centerXAnchor.constraint(equalTo: returnDateLabel.centerXAnchor),
-
             ])
-            
         }
-
 }
-

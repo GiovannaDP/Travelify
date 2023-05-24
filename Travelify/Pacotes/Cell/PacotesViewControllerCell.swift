@@ -17,6 +17,5 @@ class PacotesViewControllerCell: UITableViewCell {
     private var customView: PacotesScreenViewCell = PacotesScreenViewCell()
     
     weak var delegate: PacotesCellControllerDelegate?
-
 }
 
