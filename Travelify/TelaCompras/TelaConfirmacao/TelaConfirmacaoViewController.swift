@@ -61,16 +61,22 @@ class TelaConfirmacaoViewController: UIViewController {
     }
     
     @objc func confirmar(_ sender: UIButton) {
-        let vc = PopupViewController()
-        vc.instanciar(voo: vooModel, hotel: hotelModel, pacote: pacoteModel)
-        vc.modalTransitionStyle = .coverVertical
+        let alert = UIAlertController(title: "Tem certeza?", message: "Ao confirmar você concluirá a compra!", preferredStyle: .alert)
         
-        let transicao = CATransition()
-        transicao.duration = 0.3
-        transicao.type = CATransitionType.moveIn
-        transicao.subtype = CATransitionSubtype.fromTop
-        navigationController?.view.layer.add(transicao, forKey: kCATransition)
-        navigationController?.pushViewController(vc, animated: false)
+        let okAction = UIAlertAction(title: "Confirmar", style: .default) { (_) in
+            self.actionConfirmar()
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel) { (_) in
+            let vc = TelaInicialViewController()
+            self.navigationController?.popToViewController(vc, animated: true)
+        }
+
+        okAction.setValue(UIColor.red, forKey: "titleTextColor")
+
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
     }
     
     func setupViewVoo() {
@@ -112,6 +118,98 @@ class TelaConfirmacaoViewController: UIViewController {
             customView?.origemDestinoText.text = "\(pacote.origin) -> \(pacote.destiny)"
             customView?.datasText.text = "\(pacote.departureDate) - \(pacote.returnDate)"
             customView?.classeDoVooText.text = "\(pacote.hotel.nome) -> \(pacote.flight.airline)"
+        }
+    }
+    
+    func actionConfirmar() {
+        if let vooModel {
+            let confirmacaoModel = ConfirmacaoVooModel(idUser: UserViewModel.body.id, idFlight: vooModel.id, persons: 1)
+            callVoo(model: confirmacaoModel)
+        } else if let hotelModel {
+            let confirmacaoModel = ConfirmacaoHotelModel(idUser: UserViewModel.body.id, idHotel: hotelModel.id, persons: 1)
+            callHotel(model: confirmacaoModel)
+        } else if let pacoteModel {
+            let confirmacaoModel = ConfirmacaoPacoteModel(idUser: UserViewModel.body.id, idPackage: pacoteModel.id, persons: 1)
+            callPacote(model: confirmacaoModel)
+        }
+    }
+    
+    func routeToSuasCompras() {
+        let vc = SuasComprasViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func callUser() {
+        let model = LoginModel(password: UserViewModel.body.password, username: UserViewModel.body.username)
+        
+        do {
+            let service = LoginService()
+            service.apiCall(model: model, callback: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case let .failure(error):
+                        print(error)
+                    case let .success(data):
+                        let userResponse = data as! UserResponse
+                        UserViewModel.body = userResponse
+                        self.routeToSuasCompras()
+                    }
+                }
+            })
+        }
+    }
+    
+    func callVoo(model: ConfirmacaoVooModel) {
+        do {
+            let service = ConfirmacaoService()
+            service.apiCallVoo(model: model, callback: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case let .failure(error):
+                        print(error)
+                    case let .success(data):
+                        print(data)
+                        self.callUser()
+                        
+                    }
+                }
+            })
+        }
+    }
+    
+    func callHotel(model: ConfirmacaoHotelModel) {
+        do {
+            let service = ConfirmacaoService()
+            service.apiCallHotel(model: model, callback: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case let .failure(error):
+                        print(error)
+                    case let .success(data):
+                        print(data)
+                        self.callUser()
+//                        self.routeToSuasCompras()
+                    }
+                }
+            })
+        }
+    }
+    
+    func callPacote(model: ConfirmacaoPacoteModel) {
+        do {
+            let service = ConfirmacaoService()
+            service.apiCallPacote(model: model, callback: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case let .failure(error):
+                        print(error)
+                    case let .success(data):
+                        print(data)
+                        self.callUser()
+//                        self.routeToSuasCompras()
+                    }
+                }
+            })
         }
     }
 }

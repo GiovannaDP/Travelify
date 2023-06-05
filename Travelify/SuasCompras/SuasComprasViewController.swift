@@ -19,11 +19,7 @@ class SuasComprasViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
-        
-        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
-        rightItem.tintColor = .white
-        
-        self.navigationItem.rightBarButtonItem = rightItem
+        configuraNavBar()
         configuraTableView()
     }
     
@@ -37,9 +33,24 @@ class SuasComprasViewController: UIViewController {
         customView = view as? SuasComprasScreenView
     }
     
+    func configuraNavBar() {
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
+        rightItem.tintColor = .white
+        let leftItem = UIBarButtonItem(image: UIImage(systemName: "house.fill"), style: .plain, target: self, action: #selector(leftItemTapped))
+        leftItem.tintColor = .white
+        
+        self.navigationItem.leftBarButtonItem = leftItem
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
+    
     @objc func rightItemTapped() {
-        debugPrint("teste")
         navigateToMenuUsuario()
+    }
+    
+    @objc func leftItemTapped() {
+        if let telaAnterior = navigationController?.viewControllers.first(where: { $0 is TelaInicialViewController }) {
+            navigationController?.popToViewController(telaAnterior, animated: true)
+        }
     }
     
     func configuraTableView() {

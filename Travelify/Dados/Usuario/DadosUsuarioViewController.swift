@@ -16,6 +16,9 @@ class DadosUsuarioViewController: UIViewController {
         super.viewDidLoad()
         buildView()
         configuraTableView()
+        
+        let leftItem = UIBarButtonItem()
+        self.navigationItem.leftBarButtonItem = leftItem
     }
     
     func buildView() {
@@ -44,7 +47,7 @@ extension DadosUsuarioViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -65,6 +68,8 @@ extension DadosUsuarioViewController: UITableViewDataSource {
         case 2:
             celula.configuraInfo(icon: "bag.circle", info: "Suas compras")
         case 3:
+            celula.configuraInfo(icon: "house.circle", info: "Início")
+        case 4:
             celula.configuraInfo(icon: "return.left", info: "Sair")
         default:
             break
@@ -88,6 +93,9 @@ extension DadosUsuarioViewController: UITableViewDelegate {
             let vc = SuasComprasViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         case 3:
+            let vc = TelaInicialViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 4:
             sairDoApp()
         default:
             break
