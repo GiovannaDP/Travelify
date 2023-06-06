@@ -12,7 +12,7 @@ class PerfilUsuarioScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        backgroundColor = UIColor(named: "backgroundColorDark")
         setupView()
         setupItens()
         configuraConstraints()
@@ -25,7 +25,7 @@ class PerfilUsuarioScreenView: UIView {
     lazy var mainView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        view.backgroundColor = UIColor(named: "backgroundColorDark")
         return view
     }()
     
@@ -65,7 +65,8 @@ class PerfilUsuarioScreenView: UIView {
     lazy var usernameText: UITextField = {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
-        text.backgroundColor = .white
+        text.backgroundColor = .lightGray
+        text.isEnabled = false
         return text
     }()
     
@@ -99,6 +100,21 @@ class PerfilUsuarioScreenView: UIView {
         return text
     }()
 
+    lazy var passwordLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Senha"
+        label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        return label
+    }()
+    
+    lazy var passwordText: UITextField = {
+        let text = UITextField()
+        text.translatesAutoresizingMaskIntoConstraints = false
+        text.backgroundColor = .white
+        text.isSecureTextEntry = true
+        return text
+    }()
     
     lazy var editarButton: UIButton = {
         let button = UIButton()
@@ -122,6 +138,8 @@ class PerfilUsuarioScreenView: UIView {
         mainView.addSubview(emailText)
         mainView.addSubview(phoneLabel)
         mainView.addSubview(phoneText)
+        mainView.addSubview(passwordLabel)
+        mainView.addSubview(passwordText)
         mainView.addSubview(editarButton)
     }
     
@@ -130,6 +148,7 @@ class PerfilUsuarioScreenView: UIView {
         emailText.layer.cornerRadius = 8
         nameText.layer.cornerRadius = 8
         phoneText.layer.cornerRadius = 8
+        passwordText.layer.cornerRadius = 8
         editarButton.layer.cornerRadius = 15
     }
     
@@ -178,6 +197,15 @@ class PerfilUsuarioScreenView: UIView {
             self.phoneText.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 20),
             self.phoneText.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -20),
             self.phoneText.heightAnchor.constraint(equalToConstant: 30),
+            
+            self.passwordLabel.topAnchor.constraint(equalTo: self.phoneText.topAnchor, constant: 40),
+            self.passwordLabel.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 20),
+            self.passwordLabel.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -20),
+            
+            self.passwordText.topAnchor.constraint(equalTo: self.passwordLabel.topAnchor, constant: 25),
+            self.passwordText.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 20),
+            self.passwordText.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -20),
+            self.passwordText.heightAnchor.constraint(equalToConstant: 30),
             
             self.editarButton.leadingAnchor.constraint(equalTo: mainView.leadingAnchor, constant: 100),
             self.editarButton.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -100),

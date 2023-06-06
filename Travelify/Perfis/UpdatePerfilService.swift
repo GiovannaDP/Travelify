@@ -1,13 +1,13 @@
 //
-//  PerfilVendedorService.swift
+//  UpdatePerfilService.swift
 //  Travelify
 //
-//  Created by Giovanna Danelli Pau on 26/04/23.
+//  Created by Giovanna Danelli Pau on 06/06/23.
 //
 
 import Foundation
 
-class PerfilVendedorService {
+class UpdatePerfilService {
     
     func apiCall(model: PerfilModel, callback: @escaping(Result<Any, ServiceError>) -> Void) {
         
@@ -28,8 +28,6 @@ class PerfilVendedorService {
         ]
         request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
 
-
-
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data else {
                 callback(.failure(.network(error)))
@@ -37,8 +35,8 @@ class PerfilVendedorService {
             }
             
             do {
-                let userResponse = try JSONDecoder().decode(UserResponse.self, from: data)
-                callback(.success(userResponse))
+                let intResponse = try JSONDecoder().decode(Int.self, from: data)
+                callback(.success(intResponse))
                 
             } catch {
                 callback(.failure(.decodeFail(error)))

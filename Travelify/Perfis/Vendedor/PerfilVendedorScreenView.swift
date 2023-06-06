@@ -12,7 +12,7 @@ class PerfilVendedorScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        backgroundColor = UIColor(named: "backgroundColorDark")
         setupView()
         setupItens()
         configuraConstraints()
@@ -25,7 +25,7 @@ class PerfilVendedorScreenView: UIView {
     lazy var mainView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        view.backgroundColor = UIColor(named: "backgroundColorDark")
         return view
     }()
     
@@ -44,6 +44,7 @@ class PerfilVendedorScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -59,6 +60,7 @@ class PerfilVendedorScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "CNPJ"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -66,6 +68,8 @@ class PerfilVendedorScreenView: UIView {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
         text.backgroundColor = .white
+        text.isEnabled = false
+        text.backgroundColor = .lightGray
         return text
     }()
     
@@ -74,6 +78,7 @@ class PerfilVendedorScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Email"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -89,6 +94,7 @@ class PerfilVendedorScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Telefone"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -104,6 +110,7 @@ class PerfilVendedorScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Senha"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -111,6 +118,7 @@ class PerfilVendedorScreenView: UIView {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
         text.backgroundColor = .white
+        text.isSecureTextEntry = true
         return text
     }()
 

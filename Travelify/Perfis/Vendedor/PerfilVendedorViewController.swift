@@ -16,11 +16,11 @@ class PerfilVendedorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
-        
-        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
-        rightItem.tintColor = .white
-        
-        self.navigationItem.rightBarButtonItem = rightItem
+        configuraNavBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupItens()
     }
     
@@ -30,9 +30,22 @@ class PerfilVendedorViewController: UIViewController {
         customView?.editarButton.addTarget(self, action: #selector(atualizarDados), for: .touchUpInside)
     }
     
+    func configuraNavBar() {
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
+        rightItem.tintColor = .white
+        let leftItem = UIBarButtonItem(image: UIImage(systemName: "house.fill"), style: .plain, target: self, action: #selector(leftItemTapped))
+        leftItem.tintColor = .white
+        
+        self.navigationItem.leftBarButtonItem = leftItem
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
+    
     @objc func rightItemTapped() {
-        debugPrint("teste")
         navigateToMenuVendedor()
+    }
+    
+    @objc func leftItemTapped() {
+        popToTelaInicialVendas()
     }
     
     func getData() {
@@ -41,23 +54,39 @@ class PerfilVendedorViewController: UIViewController {
         model = PerfilModel(email: email, name: name, password: unmaskedString as String, phone: phone, id: UserViewModel.body.id)
     }
     
+    func callUser() {
+        let model = LoginModel(password: UserViewModel.body.password, username: UserViewModel.body.username)
+        
+        do {
+            let service = LoginService()
+            service.apiCall(model: model, callback: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case let .failure(error):
+                        print(error)
+                    case let .success(data):
+                        let userResponse = data as! UserResponse
+                        UserViewModel.body = userResponse
+                        self.navigateToMenuVendedor()
+                    }
+                }
+            })
+        }
+    }
+    
     @objc func atualizarDados(_ sender: UIButton) {
         getData()
         guard let perfilModel = model else { return }
-        
-        debugPrint("ATUALIZAR DADOOOS")
 
         do {
-            let service = PerfilVendedorService()
+            let service = UpdatePerfilService()
             service.apiCall(model: perfilModel, callback: { result in
                 DispatchQueue.main.async {
                     switch result {
                     case let .failure(error):
                         print(error)
                     case let .success(data):
-//                        userResponse = data as! UserResponse
-//                        guard let model = userResponse else { return }
-//                        UserViewModel.body = model
+                        self.callUser()
                         print(data)
                     }
                 }
