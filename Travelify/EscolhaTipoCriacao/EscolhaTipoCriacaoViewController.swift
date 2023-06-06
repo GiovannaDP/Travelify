@@ -32,14 +32,12 @@ class EscolhaTipoCriacaoViewController: UIViewController {
     }
     
     @objc func criarHotel(_ sender: UIButton) {
-//        let vc = ()
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = CriacaoHotelViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func criarPacote(_ sender: UIButton) {
-//        let vc = ()
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = CriacaoPacoteViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
-
-
