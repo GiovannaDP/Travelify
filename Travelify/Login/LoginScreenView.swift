@@ -12,7 +12,7 @@ class LoginScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        backgroundColor = UIColor(named: "backgroundColorDark")
         setupView()
         setupItens()
         configuraConstraints()
@@ -25,7 +25,7 @@ class LoginScreenView: UIView {
     lazy var firstView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        view.backgroundColor = UIColor(named: "backgroundColorDark")
         return view
     }()
     
@@ -44,6 +44,7 @@ class LoginScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Username"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -59,6 +60,7 @@ class LoginScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Password"
+        label.textColor = UIColor(named: "backgroundColor")
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
         return label
     }()

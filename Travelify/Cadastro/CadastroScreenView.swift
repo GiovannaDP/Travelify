@@ -13,7 +13,7 @@ class CadastroScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        backgroundColor = UIColor(named: "backgroundColorDark")
         setupView()
         setupItens()
         configuraConstraints()
@@ -26,7 +26,7 @@ class CadastroScreenView: UIView {
     lazy var firstView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        view.backgroundColor = UIColor(named: "backgroundColorDark")
         return view
     }()
     
@@ -44,6 +44,7 @@ class CadastroScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Email"
+        label.textColor = UIColor(named: "backgroundColor")
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
         return label
     }()
@@ -59,6 +60,7 @@ class CadastroScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome"
+        label.textColor = UIColor(named: "backgroundColor")
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
         return label
     }()
@@ -74,6 +76,7 @@ class CadastroScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Senha"
+        label.textColor = UIColor(named: "backgroundColor")
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
         return label
     }()
@@ -90,6 +93,7 @@ class CadastroScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Telefone"
+        label.textColor = UIColor(named: "backgroundColor")
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
         return label
     }()
@@ -105,6 +109,7 @@ class CadastroScreenView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "CPF ou CNPJ"
+        label.textColor = UIColor(named: "backgroundColor")
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
         return label
     }()
