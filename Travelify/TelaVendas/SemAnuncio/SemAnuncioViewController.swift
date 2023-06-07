@@ -15,19 +15,22 @@ class SemAnuncioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
-        
-        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
-        rightItem.tintColor = .white
-        let leftItem = UIBarButtonItem()
-        
-        self.navigationItem.rightBarButtonItem = rightItem
-        self.navigationItem.leftBarButtonItem = leftItem
+        configuraNavBar()
     }
     
     func buildView() {
         view = SemAnuncioScreenView()
         customView = view as? SemAnuncioScreenView
         customView?.cadastroAnuncioButton.addTarget(self, action: #selector(cadastro), for: .touchUpInside)
+    }
+    
+    func configuraNavBar() {
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
+        rightItem.tintColor = .white
+        let leftItem = UIBarButtonItem()
+    
+        self.navigationItem.rightBarButtonItem = rightItem
+        self.navigationItem.leftBarButtonItem = leftItem
     }
     
     @objc func rightItemTapped() {

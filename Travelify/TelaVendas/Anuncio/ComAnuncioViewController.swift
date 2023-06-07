@@ -10,9 +10,7 @@ import UIKit
 
 class ComAnuncioViewController: UIViewController{
     
-
     private var customView: ComAnuncioScreenView? = nil
-    private var button: String? = nil
     private var pacotesModel = UserViewModel.body.packages
     private var voosModel = UserViewModel.body.flights
     private var hoteisModel = UserViewModel.body.hotels
@@ -20,23 +18,34 @@ class ComAnuncioViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
+        configuraNavBar()
         configuraTableView()
-        
+
+        view.backgroundColor = UIColor(named: "backgroundColorDark")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        customView?.tableView.reloadData()
+    }
+
+    func buildView() {
+        view = ComAnuncioScreenView()
+        customView = view as? ComAnuncioScreenView
+        customView?.cadastroAnuncioButton.addTarget(self, action: #selector(cadastro), for: .touchUpInside)
+    }
+    
+    func configuraNavBar() {
         let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
         rightItem.tintColor = .white
         let leftItem = UIBarButtonItem()
     
         self.navigationItem.rightBarButtonItem = rightItem
         self.navigationItem.leftBarButtonItem = leftItem
-        
-        customView?.tableView.reloadData()
-        
-        view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
     }
-
-    func buildView() {
-        view = ComAnuncioScreenView()
-        customView = view as? ComAnuncioScreenView
+    
+    @objc func rightItemTapped() {
+        navigateToMenuVendedor()
     }
     
     func configuraTableView() {
@@ -47,29 +56,30 @@ class ComAnuncioViewController: UIViewController{
         customView?.tableView.delegate = self
     }
     
+    @objc func cadastro(_ sender: UIButton) {
+        let vc = EscolhaTipoCriacaoViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func irParaDetalhesVoo(_ viagem: VoosModel.Voo?) {
         if let viagemSelecionada = viagem {
-            let vooController = VoosViewController.instanciar(viagemSelecionada)
+            let vooController = VoosViewController.instanciar(viagemSelecionada, flow: .suasVendas)
             navigationController?.pushViewController(vooController, animated: true)
         }
     }
     
     func irParaDetalhesHotel(_ viagem: HoteisModel.Hotel?) {
         if let viagemSelecionada = viagem {
-            let hotelController = HoteisViewController.instanciar(viagemSelecionada)
+            let hotelController = HoteisViewController.instanciar(viagemSelecionada, flow: .suasVendas)
             navigationController?.pushViewController(hotelController, animated: true)
         }
     }
     
     func irParaDetalhesPacote(_ viagem: PacotesModel.Pacote?) {
         if let viagemSelecionada = viagem {
-            let pacoteController = PacotesViewController.instanciar(viagemSelecionada)
+            let pacoteController = PacotesViewController.instanciar(viagemSelecionada, flow: .suasVendas)
             navigationController?.pushViewController(pacoteController, animated: true)
         }
-    }
-    
-    @objc func rightItemTapped() {
-        navigateToMenuVendedor()
     }
 }
 
@@ -85,9 +95,9 @@ extension ComAnuncioViewController: UITableViewDataSource {
         case 0:
             return voosModel.count
         case 1:
-            return pacotesModel.count
-        case 2:
             return hoteisModel.count
+        case 2:
+            return pacotesModel.count
         default:
             return 0
         }
@@ -111,24 +121,24 @@ extension ComAnuncioViewController: UITableViewDataSource {
                 return celulaViagemVoo
             }
         case 1:
-            // CELULA DO PACOTE
-            guard let celulaViagemPacote = tableView.dequeueReusableCell(withIdentifier: "PacotesScreenViewCell", for: indexPath) as? PacotesScreenViewCell else { fatalError("error to create ViagemTableViewCell") }
-                
-            if pacotesModel.isEmpty {
+            // CELULA DO HOTEL
+            guard let celulaViagemHotel = tableView.dequeueReusableCell(withIdentifier: "HoteisScreenViewCell", for: indexPath) as? HoteisScreenViewCell else { fatalError("error to create ViagemTableViewCell") }
+            if hoteisModel.isEmpty {
                 return UITableViewCell()
             } else {
-                celulaViagemPacote.configuraCelula(pacotesModel[indexPath.row])
-                return celulaViagemPacote
+                celulaViagemHotel.configuraCelula(hoteisModel[indexPath.row])
+                return celulaViagemHotel
             }
         case 2:
-          // CELULA DO HOTEL
-          guard let celulaViagemHotel = tableView.dequeueReusableCell(withIdentifier: "HoteisScreenViewCell", for: indexPath) as? HoteisScreenViewCell else { fatalError("error to create ViagemTableViewCell") }
-          if hoteisModel.isEmpty {
-              return UITableViewCell()
-          } else {
-              celulaViagemHotel.configuraCelula(hoteisModel[indexPath.row])
-              return celulaViagemHotel
-          }
+        // CELULA DO PACOTE
+        guard let celulaViagemPacote = tableView.dequeueReusableCell(withIdentifier: "PacotesScreenViewCell", for: indexPath) as? PacotesScreenViewCell else { fatalError("error to create ViagemTableViewCell") }
+            
+        if pacotesModel.isEmpty {
+            return UITableViewCell()
+        } else {
+            celulaViagemPacote.configuraCelula(pacotesModel[indexPath.row])
+            return celulaViagemPacote
+        }
         default:
             return UITableViewCell()
         }
@@ -152,7 +162,5 @@ extension ComAnuncioViewController: UITableViewDelegate {
         default:
             debugPrint("outros")
         }
-        
     }
-    
 }

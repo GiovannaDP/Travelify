@@ -45,11 +45,23 @@ class ComAnuncioScreenView: UIView {
         table.backgroundColor = .white
         return table
     }()
+    
+    lazy var cadastroAnuncioButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Criar anúncio", for: .normal)
+        button.titleLabel?.font = UIFont(name: "Kailasa-Bold", size: 20)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
 
     func setupView() {
         addSubview(firstView)
         firstView.addSubview(titleLabel)
         firstView.addSubview(tableView)
+        firstView.addSubview(cadastroAnuncioButton)
+        
+        cadastroAnuncioButton.underline()
     }
     
     func configuraConstraints(){
@@ -65,7 +77,13 @@ class ComAnuncioScreenView: UIView {
             self.tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             self.tableView.leadingAnchor.constraint(equalTo: firstView.leadingAnchor),
             self.tableView.trailingAnchor.constraint(equalTo: firstView.trailingAnchor),
-            self.tableView.bottomAnchor.constraint(equalTo: firstView.bottomAnchor),
+            
+            self.cadastroAnuncioButton.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 10),
+            self.cadastroAnuncioButton.heightAnchor.constraint(equalToConstant: 30),
+            self.cadastroAnuncioButton.leadingAnchor.constraint(equalTo: firstView.leadingAnchor),
+            self.cadastroAnuncioButton.trailingAnchor.constraint(equalTo: firstView.trailingAnchor),
+            self.cadastroAnuncioButton.bottomAnchor.constraint(equalTo: firstView.bottomAnchor, constant: -20),
+            
             ])
         }
 }
