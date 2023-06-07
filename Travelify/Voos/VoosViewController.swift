@@ -11,10 +11,12 @@ import UIKit
 class VoosViewController: UIViewController {
     
     var voo: VoosModel.Voo?
+    var flow: Flow?
     
-    class func instanciar(_ viagem: VoosModel.Voo) -> VoosViewController {
+    class func instanciar(_ viagem: VoosModel.Voo, flow: Flow) -> VoosViewController {
         let vooViewController = VoosViewController()
         vooViewController.voo = viagem
+        vooViewController.flow = flow
         return vooViewController
     }
     
@@ -30,13 +32,28 @@ class VoosViewController: UIViewController {
         view = VoosScreenView()
         customView = view as? VoosScreenView
         customView?.comprarButton.addTarget(self, action: #selector(comprarVoo), for: .touchUpInside)
+        
+        switch flow {
+        case .primeiraCompra:
+            debugPrint("primeira compra")
+        case .suasCompras:
+            customView?.comprarButton.isHidden = true
+        case .suasVendas:
+            customView?.comprarButton.isHidden = true
+        default:
+            break
+        }
     }
     
     func configuraView() {
         
         guard let vagas = voo?.availableSeats else { return }
+        if UIImage(named: voo?.images[0]?.image ?? "") != nil {
+            customView?.imageView.image = UIImage(named: voo?.images[0]?.image ?? "voo")
+        } else {
+            customView?.imageView.image = UIImage(named: "voo")
+        }
         customView?.titleLabel.text = voo?.name ?? ""
-        customView?.imageView.image = UIImage(named: voo?.images[0]?.image ?? "Londres-1")
         customView?.tituloVooLabel.text = voo?.destiny
         customView?.origemLabel.text = voo?.origin
         customView?.departureDateLabel.text = voo?.departureDate
@@ -53,5 +70,3 @@ class VoosViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
 }
-
-

@@ -52,7 +52,7 @@ class VoosScreenViewCell: UITableViewCell {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleToFill
-        view.image = UIImage(systemName: "Londres-1")
+        view.image = UIImage(systemName: "voo")
         return view
     }()
     
@@ -113,7 +113,12 @@ class VoosScreenViewCell: UITableViewCell {
         
         guard let vagas = viagem?.availableSeats else { return }
         
-        firstImageView.image = UIImage(named: viagem?.images[0]?.image ?? "")
+        if UIImage(named: viagem?.images[0]?.image ?? "") != nil {
+            firstImageView.image = UIImage(named: viagem?.images[0]?.image ?? "voo")
+        } else {
+            firstImageView.image = UIImage(named: "voo")
+        }
+        
         tituloVooLabel.text = viagem?.name ?? ""
         vagasRestantesLabel.text = "\(vagas) vagas restantes"
         departureDateLabel.text = viagem?.departureDate ?? ""
@@ -155,4 +160,3 @@ class VoosScreenViewCell: UITableViewCell {
             ])
         }
 }
-
