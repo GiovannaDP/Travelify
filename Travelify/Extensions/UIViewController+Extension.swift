@@ -33,6 +33,22 @@ extension UIViewController {
         navigationController?.view.layer.add(transicao, forKey: kCATransition)
         navigationController?.pushViewController(vc, animated: false)
     }
+    
+    func popToTelaInicialCompras() {
+        if let telaAnterior = navigationController?.viewControllers.first(where: { $0 is TelaInicialViewController }) {
+            navigationController?.popToViewController(telaAnterior, animated: true)
+        }
+    }
+    
+    func popToTelaInicialVendas() {
+        if !UserViewModel.body.flights.isEmpty || !UserViewModel.body.hotels.isEmpty || !UserViewModel.body.packages.isEmpty {
+            if let telaAnterior = navigationController?.viewControllers.first(where: { $0 is ComAnuncioViewController }) {
+                navigationController?.popToViewController(telaAnterior, animated: true)
+            }
+        } else {
+            if let telaAnterior = navigationController?.viewControllers.first(where: { $0 is SemAnuncioViewController }) {
+                navigationController?.popToViewController(telaAnterior, animated: true)
+            }
+        }
+    }
 }
-
-
