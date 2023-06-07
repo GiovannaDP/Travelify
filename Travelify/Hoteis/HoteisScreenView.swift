@@ -12,7 +12,7 @@ class HoteisScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        backgroundColor = UIColor(named: "backgroundColorDark")
         setupView()
         configuraConstraints()
         
@@ -25,7 +25,6 @@ class HoteisScreenView: UIView {
     lazy var firstView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
         view.translatesAutoresizingMaskIntoConstraints = false
-//        view.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
         view.backgroundColor = .white
         return view
     }()
@@ -40,17 +39,6 @@ class HoteisScreenView: UIView {
         label.textColor = .black
         return label
     }()
-    
-//    lazy var collection: UICollectionView = {
-//        let collectionFlowLayout = UICollectionViewFlowLayout()
-//        collectionFlowLayout.scrollDirection = .horizontal
-//        let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: collectionFlowLayout)
-//        collection.translatesAutoresizingMaskIntoConstraints = false
-//        collection.isUserInteractionEnabled = false
-//        collection.isPagingEnabled = true
-//
-//        return collection
-//    }()
     
     lazy var imageView: UIImageView = {
         let view = UIImageView()
@@ -91,7 +79,6 @@ class HoteisScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "R$100,00"
         label.font = UIFont(name: "IowanOldStyle-Bold", size: 18)
-//        label.textColor = UIColor.init(red: 255/255, green: 150/255, blue: 0/255, alpha: 1.0)
         label.textColor = .orange
         return label
     }()
@@ -184,7 +171,7 @@ class HoteisScreenView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Reservar Hotel", for: .normal)
         button.titleLabel?.font = UIFont(name: "Kailasa-Bold", size: 18)
-        button.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        button.backgroundColor = UIColor(named: "backgroundColorDark")
         button.setTitleColor(.black, for: .normal)
         return button
     }()
@@ -217,7 +204,6 @@ class HoteisScreenView: UIView {
         comprarButton.addCorner()
     }
 
-    
     func configuraConstraints(){
         NSLayoutConstraint.activate([
             self.firstView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
@@ -274,7 +260,6 @@ class HoteisScreenView: UIView {
             self.piscinaLabel.topAnchor.constraint(equalTo: iconCafeDaManha.bottomAnchor, constant: 10),
             self.piscinaLabel.centerXAnchor.constraint(equalTo: iconCafeDaManha.centerXAnchor),
             
-//            self.comprarButton.centerXAnchor.constraint(equalTo: firstView.centerXAnchor),
             self.comprarButton.leadingAnchor.constraint(equalTo: firstView.leadingAnchor, constant: 60),
             self.comprarButton.trailingAnchor.constraint(equalTo: firstView.trailingAnchor, constant: -60),
             self.comprarButton.bottomAnchor.constraint(equalTo: firstView.bottomAnchor, constant: -15)

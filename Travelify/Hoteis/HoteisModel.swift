@@ -23,6 +23,8 @@ enum HoteisModel {
         let precoDiaria: Double
         let images: [Imagens]
         let additional: [Adicionais]?
+        let qtdAvaliations: Int?
+        let totalAvaliations: Int?
     
         enum CodingKeys: String, CodingKey {
             case id
@@ -37,6 +39,8 @@ enum HoteisModel {
             case precoDiaria = "dailyPrice"
             case images
             case additional
+            case qtdAvaliations
+            case totalAvaliations
         }
     }
     
@@ -62,4 +66,3 @@ enum HoteisModel {
         }
     }
 }
-

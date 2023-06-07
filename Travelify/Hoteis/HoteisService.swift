@@ -37,4 +37,3 @@ class HoteisService {
         task.resume()
     }
 }
-

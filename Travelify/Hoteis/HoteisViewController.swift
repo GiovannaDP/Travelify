@@ -11,11 +11,12 @@ import UIKit
 class HoteisViewController: UIViewController {
     
     var hotel: HoteisModel.Hotel?
+    var flow: Flow?
     
-    class func instanciar(_ viagem: HoteisModel.Hotel) -> HoteisViewController {
+    class func instanciar(_ viagem: HoteisModel.Hotel, flow: Flow) -> HoteisViewController {
         let hotelViewController = HoteisViewController()
         hotelViewController.hotel = viagem
-        
+        hotelViewController.flow = flow
         return hotelViewController
     }
     
@@ -31,13 +32,30 @@ class HoteisViewController: UIViewController {
         view = HoteisScreenView()
         customView = view as? HoteisScreenView
         customView?.comprarButton.addTarget(self, action: #selector(reservarHotel), for: .touchUpInside)
+        
+        switch flow {
+        case .primeiraCompra:
+            debugPrint("primeira compra")
+        case .suasCompras:
+            customView?.comprarButton.isHidden = true
+        case .suasVendas:
+            customView?.comprarButton.isHidden = true
+        default:
+            break
+        }
     }
     
     func configuraView() {
         
         guard let price = hotel?.precoDiaria, let nota = hotel?.nota, let nome = hotel?.nome, let local = hotel?.local else { return }
         let notaString: String
-
+        
+        if UIImage(named: hotel?.images[0].image ?? "") != nil {
+            customView?.imageView.image = UIImage(named: hotel?.images[0].image ?? "")
+        } else {
+            customView?.imageView.image = UIImage(named: "hotel")
+        }
+        
         customView?.titleLabel.text = "\(nome) - \(local)"
         customView?.departureDateLabel.text = hotel?.dataChegada
         customView?.returnDateLabel.text = hotel?.dataSaida

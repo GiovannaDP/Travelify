@@ -16,7 +16,6 @@ class HoteisScreenViewCell: UITableViewCell {
         
         setupView()
         configuraConstraints()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -110,7 +109,12 @@ class HoteisScreenViewCell: UITableViewCell {
     }
     
     func configuraCelula(_ viagem: HoteisModel.Hotel?) {
-        firstImageView.image = UIImage(named: viagem?.images[0].image ?? "Londres-1")
+        if UIImage(named: viagem?.images[0].image ?? "") != nil {
+            firstImageView.image = UIImage(named: viagem?.images[0].image ?? "")
+        } else {
+            firstImageView.image = UIImage(named: "hotel")
+        }
+        
         guard let local = viagem?.local, let nome = viagem?.nome else { return }
         tituloLabel.text = "\(local) - \(nome)"
         departureDateLabel.text = viagem?.dataChegada
@@ -157,4 +161,3 @@ class HoteisScreenViewCell: UITableViewCell {
             ])
         }
 }
-
