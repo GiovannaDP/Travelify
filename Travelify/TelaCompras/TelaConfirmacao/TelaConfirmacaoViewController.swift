@@ -170,7 +170,6 @@ class TelaConfirmacaoViewController: UIViewController {
                     case let .success(data):
                         print(data)
                         self.callUser()
-                        
                     }
                 }
             })
@@ -188,7 +187,6 @@ class TelaConfirmacaoViewController: UIViewController {
                     case let .success(data):
                         print(data)
                         self.callUser()
-//                        self.routeToSuasCompras()
                     }
                 }
             })
@@ -206,7 +204,6 @@ class TelaConfirmacaoViewController: UIViewController {
                     case let .success(data):
                         print(data)
                         self.callUser()
-//                        self.routeToSuasCompras()
                     }
                 }
             })

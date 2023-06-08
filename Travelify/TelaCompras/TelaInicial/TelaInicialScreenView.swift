@@ -44,7 +44,7 @@ class TelaInicialScreenView: UIView {
         let view = UIStackView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.axis = .horizontal
-        view.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        view.backgroundColor = UIColor(named: "backgroundColorDark")
         return view
     }()
     
@@ -52,7 +52,8 @@ class TelaInicialScreenView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Pacotes", for: .normal)
-        button.setTitleColor(UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1), for: .selected)
+        button.setTitleColor(.lightGray, for: .normal)
+        button.setTitleColor(UIColor(named: "backgroundColor"), for: .selected)
        return button
     }()
     
@@ -60,7 +61,8 @@ class TelaInicialScreenView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Voos", for: .normal)
-        button.setTitleColor(UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1), for: .selected)
+        button.setTitleColor(.lightGray, for: .normal)
+        button.setTitleColor(UIColor(named: "backgroundColor"), for: .selected)
        return button
     }()
     
@@ -68,7 +70,8 @@ class TelaInicialScreenView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Hoteis", for: .normal)
-        button.setTitleColor(UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1), for: .selected)
+        button.setTitleColor(.lightGray, for: .normal)
+        button.setTitleColor(UIColor(named: "backgroundColor"), for: .selected)
        return button
     }()
     

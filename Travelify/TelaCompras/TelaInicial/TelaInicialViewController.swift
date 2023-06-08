@@ -20,13 +20,7 @@ class TelaInicialViewController: UIViewController{
         super.viewDidLoad()
         buildView()
         configuraTableView()
-        
-        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
-        rightItem.tintColor = .white
-        let leftItem = UIBarButtonItem()
-    
-        self.navigationItem.rightBarButtonItem = rightItem
-        self.navigationItem.leftBarButtonItem = leftItem
+        configuraNavBar()
         
         view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
     }
@@ -45,6 +39,19 @@ class TelaInicialViewController: UIViewController{
         customView?.buttonVoos.addTarget(self, action: #selector(voos), for: .touchUpInside)
         customView?.buttonHoteis.addTarget(self, action: #selector(hoteis), for: .touchUpInside)
         button = "pacotes"
+    }
+    
+    func configuraNavBar() {
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
+        rightItem.tintColor = .white
+        let leftItem = UIBarButtonItem()
+    
+        self.navigationItem.rightBarButtonItem = rightItem
+        self.navigationItem.leftBarButtonItem = leftItem
+    }
+    
+    @objc func rightItemTapped() {
+        navigateToMenuUsuario()
     }
     
     func configuraTableView() {
@@ -142,21 +149,21 @@ class TelaInicialViewController: UIViewController{
     
     func irParaDetalhesVoo(_ viagem: VoosModel.Voo?) {
         if let viagemSelecionada = viagem {
-            let vooController = VoosViewController.instanciar(viagemSelecionada)
+            let vooController = VoosViewController.instanciar(viagemSelecionada, flow: .primeiraCompra)
             navigationController?.pushViewController(vooController, animated: true)
         }
     }
     
     func irParaDetalhesHotel(_ viagem: HoteisModel.Hotel?) {
         if let viagemSelecionada = viagem {
-            let hotelController = HoteisViewController.instanciar(viagemSelecionada)
+            let hotelController = HoteisViewController.instanciar(viagemSelecionada, flow: .primeiraCompra)
             navigationController?.pushViewController(hotelController, animated: true)
         }
     }
     
     func irParaDetalhesPacote(_ viagem: PacotesModel.Pacote?) {
         if let viagemSelecionada = viagem {
-            let pacoteController = PacotesViewController.instanciar(viagemSelecionada)
+            let pacoteController = PacotesViewController.instanciar(viagemSelecionada, flow: .primeiraCompra)
             navigationController?.pushViewController(pacoteController, animated: true)
         }
     }
