@@ -17,6 +17,9 @@ class DadosVendedorViewController: UIViewController {
         super.viewDidLoad()
         buildView()
         configuraTableView()
+        
+        let leftItem = UIBarButtonItem()
+        self.navigationItem.leftBarButtonItem = leftItem
     }
     
     func buildView() {
@@ -45,7 +48,7 @@ extension DadosVendedorViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -64,6 +67,8 @@ extension DadosVendedorViewController: UITableViewDataSource {
         case 1:
             celula.configuraInfo(icon: "message.circle", info: "Suas mensagens")
         case 2:
+            celula.configuraInfo(icon: "house.circle", info: "Tela inicial")
+        case 3:
             celula.configuraInfo(icon: "return.left", info: "Sair")
         default:
             break
@@ -84,6 +89,8 @@ extension DadosVendedorViewController: UITableViewDelegate{
             let vc = MensagensVendedorViewController()
             navigationController?.pushViewController(vc, animated: true)
         case 2:
+            popToTelaInicialVendas()
+        case 3:
             sairDoApp()
         default:
             break

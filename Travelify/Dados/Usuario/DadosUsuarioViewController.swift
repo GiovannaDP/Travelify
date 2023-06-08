@@ -68,7 +68,7 @@ extension DadosUsuarioViewController: UITableViewDataSource {
         case 2:
             celula.configuraInfo(icon: "bag.circle", info: "Suas compras")
         case 3:
-            celula.configuraInfo(icon: "house.circle", info: "Início")
+            celula.configuraInfo(icon: "house.circle", info: "Tela Inicial")
         case 4:
             celula.configuraInfo(icon: "return.left", info: "Sair")
         default:

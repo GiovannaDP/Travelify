@@ -41,7 +41,7 @@ class PerfilUsuarioController: UIViewController {
     }
     
     @objc func rightItemTapped() {
-        navigateToMenuVendedor()
+        navigateToMenuUsuario()
     }
     
     @objc func leftItemTapped() {
@@ -67,7 +67,7 @@ class PerfilUsuarioController: UIViewController {
                     case let .success(data):
                         let userResponse = data as! UserResponse
                         UserViewModel.body = userResponse
-                        self.navigateToMenuVendedor()
+                        self.navigateToMenuUsuario()
                     }
                 }
             })
@@ -87,7 +87,6 @@ class PerfilUsuarioController: UIViewController {
                         print(error)
                     case let .success(data):
                         self.callUser()
-                        print(data)
                     }
                 }
             })

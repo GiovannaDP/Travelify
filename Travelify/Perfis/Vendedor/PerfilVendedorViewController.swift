@@ -87,7 +87,6 @@ class PerfilVendedorViewController: UIViewController {
                         print(error)
                     case let .success(data):
                         self.callUser()
-                        print(data)
                     }
                 }
             })

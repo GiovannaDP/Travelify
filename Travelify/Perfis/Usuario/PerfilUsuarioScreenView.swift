@@ -44,6 +44,7 @@ class PerfilUsuarioScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Nome"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -59,6 +60,7 @@ class PerfilUsuarioScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "CPF"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -75,6 +77,7 @@ class PerfilUsuarioScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Email"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -90,6 +93,7 @@ class PerfilUsuarioScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Telefone"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
@@ -105,6 +109,7 @@ class PerfilUsuarioScreenView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Senha"
         label.font = UIFont(name: "Kailasa-Bold", size: 18)
+        label.textColor = UIColor(named: "backgroundColor")
         return label
     }()
     
