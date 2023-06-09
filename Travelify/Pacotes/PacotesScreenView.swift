@@ -12,7 +12,7 @@ class PacotesScreenView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        backgroundColor = UIColor(named: "backgroundColorDark")
         setupView()
         configuraConstraints()
     }
@@ -137,7 +137,7 @@ class PacotesScreenView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Comprar Pacote", for: .normal)
         button.titleLabel?.font = UIFont(name: "Kailasa-Bold", size: 18)
-        button.backgroundColor = UIColor.init(red: 100/255, green: 169/255, blue: 233/255, alpha: 1.0)
+        button.backgroundColor = UIColor(named: "backgroundColorDark")
         button.setTitleColor(.black, for: .normal)
         return button
     }()

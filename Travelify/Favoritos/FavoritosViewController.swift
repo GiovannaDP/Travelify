@@ -15,11 +15,7 @@ class FavoritosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
-        
-        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
-        rightItem.tintColor = .white
-        
-        self.navigationItem.rightBarButtonItem = rightItem
+        configuraNavBar()
     }
     
     func buildView() {
@@ -27,8 +23,22 @@ class FavoritosViewController: UIViewController {
         customView = view as? FavoritosScreenView
     }
     
+    func configuraNavBar() {
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
+        rightItem.tintColor = .white
+        let leftItem = UIBarButtonItem(image: UIImage(systemName: "house.fill"), style: .plain, target: self, action: #selector(leftItemTapped))
+        leftItem.tintColor = .white
+        
+        self.navigationItem.leftBarButtonItem = leftItem
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
+    
     @objc func rightItemTapped() {
         navigateToMenuUsuario()
+    }
+    
+    @objc func leftItemTapped() {
+        popToTelaInicialCompras()
     }
 }
 

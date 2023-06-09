@@ -15,16 +15,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let menuViewController = UINavigationController(rootViewController: TelaInicialViewController())
-//        let menuViewController = UINavigationController(rootViewController: DadosDoVendedorViewController())
-//        let menuViewController = UINavigationController(rootViewController: HotelViewController())
-//        let menuViewController = UINavigationController(rootViewController: DadosUsuarioViewController())
-//        let menuViewController = UINavigationController(rootViewController: LoginController())
+        
+        let menuViewController = UINavigationController(rootViewController: LoginViewController())
         window?.rootViewController = menuViewController
-//        window?.rootViewController = CadastroController()
         window?.makeKeyAndVisible()
     }
 

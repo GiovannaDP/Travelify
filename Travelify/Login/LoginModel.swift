@@ -25,7 +25,7 @@ struct UserResponse: Codable {
     let packages: [PacotesModel.Pacote?]
     let messages: [Messages?]
     let error: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -51,5 +51,3 @@ struct UserResponse: Codable {
         }
     }
 }
-
-
