@@ -19,33 +19,61 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		83A4D9D161FF25FC3C51CAC4AFDDFE56 /* Pods-Travelify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 754559C217195E4A0ED6106818815402 /* Pods-Travelify-dummy.m */; };
+		5274E42199E428D9524C15B17168EB26 /* Pods-Travelify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DCB3F81953A5B5D6FF45E105A12F44 /* Pods-Travelify-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B99F006618B833A6D7C9883FB8C85D1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D754D0CB8E44C3ABA415994548D6D /* iOSDropDown.swift */; };
+		B9856D940156DD0922B3F60FA0E7CF70 /* iOSDropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC96E21B127724A8AE31F57B1DAABF /* iOSDropDown-dummy.m */; };
+		CFCB4E779F02E14264D874910E5C4213 /* Pods-Travelify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D5A61DC4EF540372B2F937904FEDE0 /* Pods-Travelify-dummy.m */; };
+		D7300CA9E783B9FFF64878D9CE084F96 /* iOSDropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E60A0DECB616D18DE6236CA6B2065A74 /* iOSDropDown-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		74B096BFE87E76B79BE1B844CDF636D3 /* PBXContainerItemProxy */ = {
+		22ADD8EE2679B19E8F99678F3B0A0D00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
+		49E450436A29AF12F5B20B2D1D9F3031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C76CE6CD60B1CE55A174F03CC59AE17;
+			remoteInfo = iOSDropDown;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF2389648DE9BC206C34C01841C142B /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		14FD5958F707F8D6D16A0191CF226EB1 /* iOSDropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDropDown.debug.xcconfig; sourceTree = "<group>"; };
 		24BBA5F8DC932E976F7A6D87A0D9B05E /* Pods-Travelify */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-Travelify"; path = "libPods-Travelify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		25954BB65611F492EF9DE6FE2DF4B33C /* Pods-Travelify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Travelify.release.xcconfig"; sourceTree = "<group>"; };
-		3B4C1FA7A6A89C959CB24D243DC9D2CD /* Pods-Travelify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Travelify.debug.xcconfig"; sourceTree = "<group>"; };
-		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		754559C217195E4A0ED6106818815402 /* Pods-Travelify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Travelify-dummy.m"; sourceTree = "<group>"; };
-		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		99CF4CAECC480FA15E41F1E220166946 /* Pods-Travelify-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Travelify-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C261AB045A35A76A466BAB26EA74D21 /* iOSDropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDropDown-prefix.pch"; sourceTree = "<group>"; };
+		4016C58061AF405B56F015B178412BFF /* Pods-Travelify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Travelify.release.xcconfig"; sourceTree = "<group>"; };
+		41D49A1E38DB9FC52540D204A0C31BF0 /* Pods-Travelify-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Travelify-acknowledgements.plist"; sourceTree = "<group>"; };
+		6F855C641A693920B52C8D931384B8FB /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		71DCB3F81953A5B5D6FF45E105A12F44 /* Pods-Travelify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Travelify-umbrella.h"; sourceTree = "<group>"; };
+		7462104E6576E93260F5AAFE60FC202F /* Pods-Travelify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Travelify.debug.xcconfig"; sourceTree = "<group>"; };
+		7A7D754D0CB8E44C3ABA415994548D6D /* iOSDropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iOSDropDown.swift; path = iOSDropDown/Classes/iOSDropDown.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F43D481D4AB4268011EEA81F34ABE52C /* Pods-Travelify-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Travelify-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E0BB9399C8509CB3FF9CD0763C67EA0 /* iOSDropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSDropDown.modulemap; sourceTree = "<group>"; };
+		9FFC96E21B127724A8AE31F57B1DAABF /* iOSDropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDropDown-dummy.m"; sourceTree = "<group>"; };
+		C4EC88A060D310963042F7BA449514D3 /* Pods-Travelify-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Travelify-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7D5A61DC4EF540372B2F937904FEDE0 /* Pods-Travelify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Travelify-dummy.m"; sourceTree = "<group>"; };
+		E60A0DECB616D18DE6236CA6B2065A74 /* iOSDropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDropDown-umbrella.h"; sourceTree = "<group>"; };
+		E770B22AFB08CABA81827C8532FCFB8C /* Pods-Travelify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Travelify.modulemap"; sourceTree = "<group>"; };
+		E80E5C105188DFF1A257BB396FF713F4 /* iOSDropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDropDown.release.xcconfig; sourceTree = "<group>"; };
+		FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* iOSDropDown */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = iOSDropDown; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25D015DF6CC1EFC7D9B33583DDEE8EEE /* Frameworks */ = {
+		547B321CB4C06E9DCB88E5A66FECD531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CAA7470998E4128C2A4B4D44C11ABD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,43 +83,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3859B748B635E1905372F3E6D76D02CA /* Pods-Travelify */ = {
+		2B67668D56BB475E095EBED832AEB0D6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				99CF4CAECC480FA15E41F1E220166946 /* Pods-Travelify-acknowledgements.markdown */,
-				F43D481D4AB4268011EEA81F34ABE52C /* Pods-Travelify-acknowledgements.plist */,
-				754559C217195E4A0ED6106818815402 /* Pods-Travelify-dummy.m */,
-				3B4C1FA7A6A89C959CB24D243DC9D2CD /* Pods-Travelify.debug.xcconfig */,
-				25954BB65611F492EF9DE6FE2DF4B33C /* Pods-Travelify.release.xcconfig */,
+				59B75297C6D6AF4642549BDF04812487 /* Pods-Travelify */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		42DF5E2E605E5E664229FF54D277E64A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* iOSDropDown */,
+				24BBA5F8DC932E976F7A6D87A0D9B05E /* Pods-Travelify */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59B75297C6D6AF4642549BDF04812487 /* Pods-Travelify */ = {
+			isa = PBXGroup;
+			children = (
+				E770B22AFB08CABA81827C8532FCFB8C /* Pods-Travelify.modulemap */,
+				C4EC88A060D310963042F7BA449514D3 /* Pods-Travelify-acknowledgements.markdown */,
+				41D49A1E38DB9FC52540D204A0C31BF0 /* Pods-Travelify-acknowledgements.plist */,
+				C7D5A61DC4EF540372B2F937904FEDE0 /* Pods-Travelify-dummy.m */,
+				71DCB3F81953A5B5D6FF45E105A12F44 /* Pods-Travelify-umbrella.h */,
+				7462104E6576E93260F5AAFE60FC202F /* Pods-Travelify.debug.xcconfig */,
+				4016C58061AF405B56F015B178412BFF /* Pods-Travelify.release.xcconfig */,
 			);
 			name = "Pods-Travelify";
 			path = "Target Support Files/Pods-Travelify";
 			sourceTree = "<group>";
 		};
-		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+		90C6AB910704A769B2B4ECDCE5E7E034 /* iOSDropDown */ = {
 			isa = PBXGroup;
 			children = (
-				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
-				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+				7A7D754D0CB8E44C3ABA415994548D6D /* iOSDropDown.swift */,
+				F4F3F8979F124AA0F0288342FFBA1B11 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
+			name = iOSDropDown;
+			path = iOSDropDown;
 			sourceTree = "<group>";
 		};
-		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+		CE3B48E44003A925168EE309378DA36F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+				90C6AB910704A769B2B4ECDCE5E7E034 /* iOSDropDown */,
+				FED7B9F8CE3C3AC0EC40E0A7534FF9DE /* SwiftLint */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C04B6204A97D2BC97E13EEF7DC9AEDB3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3859B748B635E1905372F3E6D76D02CA /* Pods-Travelify */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -99,9 +139,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				965877409E01FB3D85D85E90E6B30185 /* Pods */,
-				E99AFFEC922E1F8A3F8F585B4859907C /* Products */,
-				C04B6204A97D2BC97E13EEF7DC9AEDB3 /* Targets Support Files */,
+				CE3B48E44003A925168EE309378DA36F /* Pods */,
+				42DF5E2E605E5E664229FF54D277E64A /* Products */,
+				2B67668D56BB475E095EBED832AEB0D6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,48 +152,92 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+		D9A637088701A76B6D151D201E3E1C2F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+				0CF2389648DE9BC206C34C01841C142B /* SwiftLint.debug.xcconfig */,
+				6F855C641A693920B52C8D931384B8FB /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		F4F3F8979F124AA0F0288342FFBA1B11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E0BB9399C8509CB3FF9CD0763C67EA0 /* iOSDropDown.modulemap */,
+				9FFC96E21B127724A8AE31F57B1DAABF /* iOSDropDown-dummy.m */,
+				3C261AB045A35A76A466BAB26EA74D21 /* iOSDropDown-prefix.pch */,
+				E60A0DECB616D18DE6236CA6B2065A74 /* iOSDropDown-umbrella.h */,
+				14FD5958F707F8D6D16A0191CF226EB1 /* iOSDropDown.debug.xcconfig */,
+				E80E5C105188DFF1A257BB396FF713F4 /* iOSDropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSDropDown";
+			sourceTree = "<group>";
+		};
+		FED7B9F8CE3C3AC0EC40E0A7534FF9DE /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				D9A637088701A76B6D151D201E3E1C2F /* Support Files */,
 			);
 			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		E99AFFEC922E1F8A3F8F585B4859907C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				24BBA5F8DC932E976F7A6D87A0D9B05E /* Pods-Travelify */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A3636D028FE112F1DF4CDA5C2DABF327 /* Headers */ = {
+		1A82475EB1F94DC4543CCDC4511147ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7300CA9E783B9FFF64878D9CE084F96 /* iOSDropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AD925FBA6367325F376CBE41FDA0B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5274E42199E428D9524C15B17168EB26 /* Pods-Travelify-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D52134A4F5C0DF73AF9F1CFE9093F1A9 /* Pods-Travelify */ = {
+		3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3538E923A62655021AB3CDE76935D146 /* Build configuration list for PBXNativeTarget "Pods-Travelify" */;
+			buildConfigurationList = B27AF80C35F6B97A52E74A39DDBCD7B7 /* Build configuration list for PBXNativeTarget "iOSDropDown" */;
 			buildPhases = (
-				A3636D028FE112F1DF4CDA5C2DABF327 /* Headers */,
-				156245B4B26E10D16752E311AB7732FF /* Sources */,
-				25D015DF6CC1EFC7D9B33583DDEE8EEE /* Frameworks */,
+				1A82475EB1F94DC4543CCDC4511147ED /* Headers */,
+				E57BA3E0698DBDEA6998312439084A11 /* Sources */,
+				C8CAA7470998E4128C2A4B4D44C11ABD /* Frameworks */,
+				C539A1BE5F4A896D6E5A4F32E75E1328 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D2AF49CC0805213230BD0005DD9603F0 /* PBXTargetDependency */,
+			);
+			name = iOSDropDown;
+			productName = iOSDropDown;
+			productReference = FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* iOSDropDown */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D52134A4F5C0DF73AF9F1CFE9093F1A9 /* Pods-Travelify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6852B7A258F8CAD2DE9DD0DE7B041830 /* Build configuration list for PBXNativeTarget "Pods-Travelify" */;
+			buildPhases = (
+				B4AD925FBA6367325F376CBE41FDA0B1 /* Headers */,
+				3F14AA83B172E2A0FB0732FAE9F271D9 /* Sources */,
+				547B321CB4C06E9DCB88E5A66FECD531 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30F729C2EC2D2E2283E782E3DC7275E /* PBXTargetDependency */,
+				D2C0680111E89B8D0A1416F0FE04212E /* PBXTargetDependency */,
 			);
 			name = "Pods-Travelify";
 			productName = "Pods-Travelify";
@@ -178,40 +262,83 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E99AFFEC922E1F8A3F8F585B4859907C /* Products */;
+			productRefGroup = 42DF5E2E605E5E664229FF54D277E64A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */,
 				D52134A4F5C0DF73AF9F1CFE9093F1A9 /* Pods-Travelify */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C539A1BE5F4A896D6E5A4F32E75E1328 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown.modulemap",
+				"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/iOSDropDown-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		156245B4B26E10D16752E311AB7732FF /* Sources */ = {
+		3F14AA83B172E2A0FB0732FAE9F271D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A4D9D161FF25FC3C51CAC4AFDDFE56 /* Pods-Travelify-dummy.m in Sources */,
+				CFCB4E779F02E14264D874910E5C4213 /* Pods-Travelify-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57BA3E0698DBDEA6998312439084A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B99F006618B833A6D7C9883FB8C85D1 /* iOSDropDown.swift in Sources */,
+				B9856D940156DD0922B3F60FA0E7CF70 /* iOSDropDown-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2AF49CC0805213230BD0005DD9603F0 /* PBXTargetDependency */ = {
+		A30F729C2EC2D2E2283E782E3DC7275E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 74B096BFE87E76B79BE1B844CDF636D3 /* PBXContainerItemProxy */;
+			targetProxy = 22ADD8EE2679B19E8F99678F3B0A0D00 /* PBXContainerItemProxy */;
+		};
+		D2C0680111E89B8D0A1416F0FE04212E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDropDown;
+			target = 3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */;
+			targetProxy = 49E450436A29AF12F5B20B2D1D9F3031 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		16EE5C3776BE32281180C49EA594D168 /* Release */ = {
+		05BE930E21B9BEEFE3A98D936C3F3B64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25954BB65611F492EF9DE6FE2DF4B33C /* Pods-Travelify.release.xcconfig */;
+			baseConfigurationReference = 4016C58061AF405B56F015B178412BFF /* Pods-Travelify.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -220,6 +347,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Travelify/Pods-Travelify.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -297,6 +425,31 @@
 			};
 			name = Debug;
 		};
+		59719D759211686E7100D8C2398F2084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80E5C105188DFF1A257BB396FF713F4 /* iOSDropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDropDown/iOSDropDown-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/iOSDropDown/iOSDropDown.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = iOSDropDown;
+				PRODUCT_NAME = iOSDropDown;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -359,30 +512,33 @@
 			};
 			name = Release;
 		};
-		9D7956B4EED7ACD3AE865F433F9E2922 /* Debug */ = {
+		686ECAEE162F76EBB41B3AF8DD83DCDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4C1FA7A6A89C959CB24D243DC9D2CD /* Pods-Travelify.debug.xcconfig */;
+			baseConfigurationReference = 14FD5958F707F8D6D16A0191CF226EB1 /* iOSDropDown.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDropDown/iOSDropDown-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/iOSDropDown/iOSDropDown.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = iOSDropDown;
+				PRODUCT_NAME = iOSDropDown;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 6F855C641A693920B52C8D931384B8FB /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,9 +553,31 @@
 			};
 			name = Release;
 		};
+		C6689C0D80B49C0CB243CF96FC38F501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7462104E6576E93260F5AAFE60FC202F /* Pods-Travelify.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Travelify/Pods-Travelify.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = 0CF2389648DE9BC206C34C01841C142B /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,15 +594,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3538E923A62655021AB3CDE76935D146 /* Build configuration list for PBXNativeTarget "Pods-Travelify" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D7956B4EED7ACD3AE865F433F9E2922 /* Debug */,
-				16EE5C3776BE32281180C49EA594D168 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -434,11 +603,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6852B7A258F8CAD2DE9DD0DE7B041830 /* Build configuration list for PBXNativeTarget "Pods-Travelify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6689C0D80B49C0CB243CF96FC38F501 /* Debug */,
+				05BE930E21B9BEEFE3A98D936C3F3B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
 				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27AF80C35F6B97A52E74A39DDBCD7B7 /* Build configuration list for PBXNativeTarget "iOSDropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686ECAEE162F76EBB41B3AF8DD83DCDF /* Debug */,
+				59719D759211686E7100D8C2398F2084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

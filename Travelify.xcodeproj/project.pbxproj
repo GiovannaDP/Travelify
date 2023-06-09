@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870D89862A1BF35C00B3343C /* SuasComprasScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D89852A1BF35C00B3343C /* SuasComprasScreenViewCell.swift */; };
+		870D898C2A1C205000B3343C /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D898B2A1C205000B3343C /* FavoritosViewController.swift */; };
+		870D898E2A1C205A00B3343C /* FavoritosScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D898D2A1C205A00B3343C /* FavoritosScreenView.swift */; };
+		870D89912A1EC46600B3343C /* MensagensVendedorScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D89902A1EC46600B3343C /* MensagensVendedorScreenViewCell.swift */; };
+		874A191F2A2E81F600E7CAF8 /* CriacaoPacoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A191E2A2E81F600E7CAF8 /* CriacaoPacoteViewController.swift */; };
+		874A19212A2E822600E7CAF8 /* CriacaoPacoteScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A19202A2E822600E7CAF8 /* CriacaoPacoteScreenView.swift */; };
+		874A19232A2E823E00E7CAF8 /* CriacaoPacoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A19222A2E823E00E7CAF8 /* CriacaoPacoteModel.swift */; };
+		874A19252A2E826300E7CAF8 /* CriacaoPacoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A19242A2E826300E7CAF8 /* CriacaoPacoteService.swift */; };
+		874A19272A2EA01800E7CAF8 /* libiOSDropDown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 874A19262A2EA01800E7CAF8 /* libiOSDropDown.a */; };
+		874A192B2A2F756000E7CAF8 /* UpdatePerfilService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A192A2A2F756000E7CAF8 /* UpdatePerfilService.swift */; };
+		87965D6A29F6F742001BC667 /* CriacaoHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D6929F6F742001BC667 /* CriacaoHotelViewController.swift */; };
+		87965D6C29F6F74F001BC667 /* CriacaoHotelScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D6B29F6F74F001BC667 /* CriacaoHotelScreenView.swift */; };
+		87965D6E29F6FDD7001BC667 /* CriacaoVooModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D6D29F6FDD7001BC667 /* CriacaoVooModel.swift */; };
+		87965D7029F70384001BC667 /* CriacaoHotelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D6F29F70384001BC667 /* CriacaoHotelModel.swift */; };
+		87965D7229F70D59001BC667 /* CriacaoVooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D7129F70D59001BC667 /* CriacaoVooService.swift */; };
+		87965D7429F70E96001BC667 /* CriacaoHotelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D7329F70E96001BC667 /* CriacaoHotelService.swift */; };
+		87965D7729F71DD1001BC667 /* EscolhaTipoCriacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D7629F71DD1001BC667 /* EscolhaTipoCriacaoViewController.swift */; };
+		87965D7929F71DE1001BC667 /* EscolhaTipoCriacaoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D7829F71DE1001BC667 /* EscolhaTipoCriacaoScreenView.swift */; };
+		87965D7B29F8AE9F001BC667 /* PerfilVendedorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D7A29F8AE9F001BC667 /* PerfilVendedorScreenView.swift */; };
+		87965D7D29F8AEB4001BC667 /* PerfilVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D7C29F8AEB4001BC667 /* PerfilVendedorViewController.swift */; };
+		87965D822A09ACCA001BC667 /* SuasComprasScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D812A09ACCA001BC667 /* SuasComprasScreenView.swift */; };
+		87965D842A09ACDA001BC667 /* SuasComprasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D832A09ACDA001BC667 /* SuasComprasViewController.swift */; };
+		87965D862A0C50DB001BC667 /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D852A0C50DB001BC667 /* PerfilModel.swift */; };
+		87965D8A2A0DAFA4001BC667 /* ConfirmacaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D892A0DAFA4001BC667 /* ConfirmacaoService.swift */; };
+		87965D8C2A0DB23E001BC667 /* ConfirmacaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87965D8B2A0DB23E001BC667 /* ConfirmacaoModel.swift */; };
 		87ACC54429D6426F00C8A6BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC54329D6426F00C8A6BA /* AppDelegate.swift */; };
 		87ACC54629D6426F00C8A6BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC54529D6426F00C8A6BA /* SceneDelegate.swift */; };
 		87ACC54D29D6427100C8A6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87ACC54C29D6427100C8A6BA /* Assets.xcassets */; };
@@ -24,21 +49,16 @@
 		87ACC57329D64D5200C8A6BA /* VoosScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57229D64D5200C8A6BA /* VoosScreenView.swift */; };
 		87ACC57529D64D5E00C8A6BA /* VoosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57429D64D5E00C8A6BA /* VoosService.swift */; };
 		87ACC57729D64D6F00C8A6BA /* VoosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57629D64D6F00C8A6BA /* VoosModel.swift */; };
-		87ACC57929D64E5500C8A6BA /* VoosViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57829D64E5500C8A6BA /* VoosViewControllerCell.swift */; };
 		87ACC57B29D64E6000C8A6BA /* VoosScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57A29D64E6000C8A6BA /* VoosScreenViewCell.swift */; };
-		87ACC57E29D64F0800C8A6BA /* VendasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57D29D64F0800C8A6BA /* VendasViewController.swift */; };
-		87ACC58029D64F1600C8A6BA /* VendasScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC57F29D64F1600C8A6BA /* VendasScreenView.swift */; };
 		87ACC58529D6506000C8A6BA /* HoteisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC58429D6506000C8A6BA /* HoteisModel.swift */; };
 		87ACC58729D6506A00C8A6BA /* HoteisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC58629D6506A00C8A6BA /* HoteisService.swift */; };
 		87ACC58929D6508900C8A6BA /* HoteisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC58829D6508900C8A6BA /* HoteisViewController.swift */; };
 		87ACC58B29D6509F00C8A6BA /* HoteisScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC58A29D6509F00C8A6BA /* HoteisScreenView.swift */; };
 		87ACC58D29D650AF00C8A6BA /* HoteisScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC58C29D650AF00C8A6BA /* HoteisScreenViewCell.swift */; };
-		87ACC58F29D650C000C8A6BA /* HoteisViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC58E29D650C000C8A6BA /* HoteisViewControllerCell.swift */; };
 		87ACC59329D658F000C8A6BA /* PacotesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59229D658F000C8A6BA /* PacotesScreenView.swift */; };
 		87ACC59529D658FC00C8A6BA /* PacotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59429D658FC00C8A6BA /* PacotesViewController.swift */; };
 		87ACC59729D6590600C8A6BA /* PacotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59629D6590600C8A6BA /* PacotesService.swift */; };
 		87ACC59929D6591000C8A6BA /* PacotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59829D6591000C8A6BA /* PacotesModel.swift */; };
-		87ACC59B29D6592000C8A6BA /* PacotesViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59A29D6592000C8A6BA /* PacotesViewControllerCell.swift */; };
 		87ACC59D29D6592B00C8A6BA /* PacotesScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59C29D6592B00C8A6BA /* PacotesScreenViewCell.swift */; };
 		87ACC5A029D659F300C8A6BA /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC59F29D659F300C8A6BA /* UIButton+Extension.swift */; };
 		87ACC5A229D65A0000C8A6BA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5A129D65A0000C8A6BA /* UIView+Extension.swift */; };
@@ -52,9 +72,7 @@
 		87ACC5C029D660D300C8A6BA /* DadosUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5BF29D660D300C8A6BA /* DadosUsuarioViewController.swift */; };
 		87ACC5C229D660E500C8A6BA /* DadosUsuarioScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5C129D660E500C8A6BA /* DadosUsuarioScreenView.swift */; };
 		87ACC5C529D6612800C8A6BA /* DadosUsuarioScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5C429D6612800C8A6BA /* DadosUsuarioScreenViewCell.swift */; };
-		87ACC5C729D6613800C8A6BA /* DadosUsuarioViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5C629D6613800C8A6BA /* DadosUsuarioViewControllerCell.swift */; };
 		87ACC5CA29D6616C00C8A6BA /* DadosVendedorScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5C929D6616C00C8A6BA /* DadosVendedorScreenViewCell.swift */; };
-		87ACC5CC29D6617E00C8A6BA /* DadosVendedorViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5CB29D6617E00C8A6BA /* DadosVendedorViewControllerCell.swift */; };
 		87ACC5CE29D6619000C8A6BA /* DadosVendedorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5CD29D6619000C8A6BA /* DadosVendedorScreenView.swift */; };
 		87ACC5D029D6619C00C8A6BA /* DadosVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5CF29D6619C00C8A6BA /* DadosVendedorViewController.swift */; };
 		87ACC5D229D6787500C8A6BA /* ComAnuncioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5D129D6787500C8A6BA /* ComAnuncioViewController.swift */; };
@@ -64,14 +82,39 @@
 		87ACC5DD29D679E000C8A6BA /* MensagensVendedorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5DC29D679DF00C8A6BA /* MensagensVendedorViewController.swift */; };
 		87ACC5DF29D679EB00C8A6BA /* MensagensVendedorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5DE29D679EB00C8A6BA /* MensagensVendedorScreenView.swift */; };
 		87ACC5E229D6804A00C8A6BA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5E129D6804A00C8A6BA /* UserViewModel.swift */; };
-		87ACC5E429DA2A6500C8A6BA /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5E329DA2A6500C8A6BA /* PopupViewController.swift */; };
-		87ACC5E629DA2A9800C8A6BA /* PopupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5E529DA2A9800C8A6BA /* PopupScreenView.swift */; };
+		87ACC5E929DB8DA600C8A6BA /* CriacaoVooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5E829DB8DA600C8A6BA /* CriacaoVooViewController.swift */; };
+		87ACC5EB29DB8DE600C8A6BA /* CriacaoVooScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACC5EA29DB8DE600C8A6BA /* CriacaoVooScreenView.swift */; };
+		CE15F26A456B2C6D07FE1A2D /* libPods-Travelify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40753E9936037DCE539AA093 /* libPods-Travelify.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2DB0F2167C987304B17BD8F9 /* libPods-Travelify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Travelify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64D7D2CBDA55C53944CF3FF7 /* Pods-Travelify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelify.debug.xcconfig"; path = "Target Support Files/Pods-Travelify/Pods-Travelify.debug.xcconfig"; sourceTree = "<group>"; };
-		7BFE09144C4628E0FB3AB5E3 /* Pods-Travelify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelify.release.xcconfig"; path = "Target Support Files/Pods-Travelify/Pods-Travelify.release.xcconfig"; sourceTree = "<group>"; };
+		40753E9936037DCE539AA093 /* libPods-Travelify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Travelify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		665276EC9B1A728DC7566E5A /* Pods-Travelify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelify.debug.xcconfig"; path = "Target Support Files/Pods-Travelify/Pods-Travelify.debug.xcconfig"; sourceTree = "<group>"; };
+		870D89852A1BF35C00B3343C /* SuasComprasScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuasComprasScreenViewCell.swift; sourceTree = "<group>"; };
+		870D898B2A1C205000B3343C /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
+		870D898D2A1C205A00B3343C /* FavoritosScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosScreenView.swift; sourceTree = "<group>"; };
+		870D89902A1EC46600B3343C /* MensagensVendedorScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensVendedorScreenViewCell.swift; sourceTree = "<group>"; };
+		874A191E2A2E81F600E7CAF8 /* CriacaoPacoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoPacoteViewController.swift; sourceTree = "<group>"; };
+		874A19202A2E822600E7CAF8 /* CriacaoPacoteScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoPacoteScreenView.swift; sourceTree = "<group>"; };
+		874A19222A2E823E00E7CAF8 /* CriacaoPacoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoPacoteModel.swift; sourceTree = "<group>"; };
+		874A19242A2E826300E7CAF8 /* CriacaoPacoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoPacoteService.swift; sourceTree = "<group>"; };
+		874A19262A2EA01800E7CAF8 /* libiOSDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		874A192A2A2F756000E7CAF8 /* UpdatePerfilService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePerfilService.swift; sourceTree = "<group>"; };
+		87965D6929F6F742001BC667 /* CriacaoHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoHotelViewController.swift; sourceTree = "<group>"; };
+		87965D6B29F6F74F001BC667 /* CriacaoHotelScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoHotelScreenView.swift; sourceTree = "<group>"; };
+		87965D6D29F6FDD7001BC667 /* CriacaoVooModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoVooModel.swift; sourceTree = "<group>"; };
+		87965D6F29F70384001BC667 /* CriacaoHotelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoHotelModel.swift; sourceTree = "<group>"; };
+		87965D7129F70D59001BC667 /* CriacaoVooService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoVooService.swift; sourceTree = "<group>"; };
+		87965D7329F70E96001BC667 /* CriacaoHotelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoHotelService.swift; sourceTree = "<group>"; };
+		87965D7629F71DD1001BC667 /* EscolhaTipoCriacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolhaTipoCriacaoViewController.swift; sourceTree = "<group>"; };
+		87965D7829F71DE1001BC667 /* EscolhaTipoCriacaoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolhaTipoCriacaoScreenView.swift; sourceTree = "<group>"; };
+		87965D7A29F8AE9F001BC667 /* PerfilVendedorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilVendedorScreenView.swift; sourceTree = "<group>"; };
+		87965D7C29F8AEB4001BC667 /* PerfilVendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilVendedorViewController.swift; sourceTree = "<group>"; };
+		87965D812A09ACCA001BC667 /* SuasComprasScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuasComprasScreenView.swift; sourceTree = "<group>"; };
+		87965D832A09ACDA001BC667 /* SuasComprasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuasComprasViewController.swift; sourceTree = "<group>"; };
+		87965D852A0C50DB001BC667 /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
+		87965D892A0DAFA4001BC667 /* ConfirmacaoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoService.swift; sourceTree = "<group>"; };
+		87965D8B2A0DB23E001BC667 /* ConfirmacaoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoModel.swift; sourceTree = "<group>"; };
 		87ACC54029D6426F00C8A6BA /* Travelify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ACC54329D6426F00C8A6BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87ACC54529D6426F00C8A6BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,21 +134,16 @@
 		87ACC57229D64D5200C8A6BA /* VoosScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoosScreenView.swift; sourceTree = "<group>"; };
 		87ACC57429D64D5E00C8A6BA /* VoosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoosService.swift; sourceTree = "<group>"; };
 		87ACC57629D64D6F00C8A6BA /* VoosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoosModel.swift; sourceTree = "<group>"; };
-		87ACC57829D64E5500C8A6BA /* VoosViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoosViewControllerCell.swift; sourceTree = "<group>"; };
 		87ACC57A29D64E6000C8A6BA /* VoosScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoosScreenViewCell.swift; sourceTree = "<group>"; };
-		87ACC57D29D64F0800C8A6BA /* VendasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendasViewController.swift; sourceTree = "<group>"; };
-		87ACC57F29D64F1600C8A6BA /* VendasScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendasScreenView.swift; sourceTree = "<group>"; };
 		87ACC58429D6506000C8A6BA /* HoteisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisModel.swift; sourceTree = "<group>"; };
 		87ACC58629D6506A00C8A6BA /* HoteisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisService.swift; sourceTree = "<group>"; };
 		87ACC58829D6508900C8A6BA /* HoteisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisViewController.swift; sourceTree = "<group>"; };
 		87ACC58A29D6509F00C8A6BA /* HoteisScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisScreenView.swift; sourceTree = "<group>"; };
 		87ACC58C29D650AF00C8A6BA /* HoteisScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisScreenViewCell.swift; sourceTree = "<group>"; };
-		87ACC58E29D650C000C8A6BA /* HoteisViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoteisViewControllerCell.swift; sourceTree = "<group>"; };
 		87ACC59229D658F000C8A6BA /* PacotesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesScreenView.swift; sourceTree = "<group>"; };
 		87ACC59429D658FC00C8A6BA /* PacotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViewController.swift; sourceTree = "<group>"; };
 		87ACC59629D6590600C8A6BA /* PacotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesService.swift; sourceTree = "<group>"; };
 		87ACC59829D6591000C8A6BA /* PacotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesModel.swift; sourceTree = "<group>"; };
-		87ACC59A29D6592000C8A6BA /* PacotesViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViewControllerCell.swift; sourceTree = "<group>"; };
 		87ACC59C29D6592B00C8A6BA /* PacotesScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesScreenViewCell.swift; sourceTree = "<group>"; };
 		87ACC59F29D659F300C8A6BA /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		87ACC5A129D65A0000C8A6BA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -119,9 +157,7 @@
 		87ACC5BF29D660D300C8A6BA /* DadosUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosUsuarioViewController.swift; sourceTree = "<group>"; };
 		87ACC5C129D660E500C8A6BA /* DadosUsuarioScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosUsuarioScreenView.swift; sourceTree = "<group>"; };
 		87ACC5C429D6612800C8A6BA /* DadosUsuarioScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosUsuarioScreenViewCell.swift; sourceTree = "<group>"; };
-		87ACC5C629D6613800C8A6BA /* DadosUsuarioViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosUsuarioViewControllerCell.swift; sourceTree = "<group>"; };
 		87ACC5C929D6616C00C8A6BA /* DadosVendedorScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosVendedorScreenViewCell.swift; sourceTree = "<group>"; };
-		87ACC5CB29D6617E00C8A6BA /* DadosVendedorViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosVendedorViewControllerCell.swift; sourceTree = "<group>"; };
 		87ACC5CD29D6619000C8A6BA /* DadosVendedorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosVendedorScreenView.swift; sourceTree = "<group>"; };
 		87ACC5CF29D6619C00C8A6BA /* DadosVendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosVendedorViewController.swift; sourceTree = "<group>"; };
 		87ACC5D129D6787500C8A6BA /* ComAnuncioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComAnuncioViewController.swift; sourceTree = "<group>"; };
@@ -131,8 +167,9 @@
 		87ACC5DC29D679DF00C8A6BA /* MensagensVendedorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensVendedorViewController.swift; sourceTree = "<group>"; };
 		87ACC5DE29D679EB00C8A6BA /* MensagensVendedorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagensVendedorScreenView.swift; sourceTree = "<group>"; };
 		87ACC5E129D6804A00C8A6BA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		87ACC5E329DA2A6500C8A6BA /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
-		87ACC5E529DA2A9800C8A6BA /* PopupScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenView.swift; sourceTree = "<group>"; };
+		87ACC5E829DB8DA600C8A6BA /* CriacaoVooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoVooViewController.swift; sourceTree = "<group>"; };
+		87ACC5EA29DB8DE600C8A6BA /* CriacaoVooScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriacaoVooScreenView.swift; sourceTree = "<group>"; };
+		A57AADEEE76FBDAEC650A76C /* Pods-Travelify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travelify.release.xcconfig"; path = "Target Support Files/Pods-Travelify/Pods-Travelify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874A19272A2EA01800E7CAF8 /* libiOSDropDown.a in Frameworks */,
+				CE15F26A456B2C6D07FE1A2D /* libPods-Travelify.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +188,76 @@
 		3148BD40D8A9A3C5794E1048 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64D7D2CBDA55C53944CF3FF7 /* Pods-Travelify.debug.xcconfig */,
-				7BFE09144C4628E0FB3AB5E3 /* Pods-Travelify.release.xcconfig */,
+				665276EC9B1A728DC7566E5A /* Pods-Travelify.debug.xcconfig */,
+				A57AADEEE76FBDAEC650A76C /* Pods-Travelify.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		870D89872A1BF36400B3343C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				870D89852A1BF35C00B3343C /* SuasComprasScreenViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		870D898A2A1C203F00B3343C /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				870D898B2A1C205000B3343C /* FavoritosViewController.swift */,
+				870D898D2A1C205A00B3343C /* FavoritosScreenView.swift */,
+			);
+			path = Favoritos;
+			sourceTree = "<group>";
+		};
+		870D898F2A1EC44200B3343C /* MensagensVendedorCell */ = {
+			isa = PBXGroup;
+			children = (
+				870D89902A1EC46600B3343C /* MensagensVendedorScreenViewCell.swift */,
+			);
+			path = MensagensVendedorCell;
+			sourceTree = "<group>";
+		};
+		874A191D2A2E81E100E7CAF8 /* CriacaoPacote */ = {
+			isa = PBXGroup;
+			children = (
+				874A191E2A2E81F600E7CAF8 /* CriacaoPacoteViewController.swift */,
+				874A19202A2E822600E7CAF8 /* CriacaoPacoteScreenView.swift */,
+				874A19222A2E823E00E7CAF8 /* CriacaoPacoteModel.swift */,
+				874A19242A2E826300E7CAF8 /* CriacaoPacoteService.swift */,
+			);
+			path = CriacaoPacote;
+			sourceTree = "<group>";
+		};
+		87965D6829F6F72C001BC667 /* CriacaoHotel */ = {
+			isa = PBXGroup;
+			children = (
+				87965D6929F6F742001BC667 /* CriacaoHotelViewController.swift */,
+				87965D6B29F6F74F001BC667 /* CriacaoHotelScreenView.swift */,
+				87965D6F29F70384001BC667 /* CriacaoHotelModel.swift */,
+				87965D7329F70E96001BC667 /* CriacaoHotelService.swift */,
+			);
+			path = CriacaoHotel;
+			sourceTree = "<group>";
+		};
+		87965D7529F71DBB001BC667 /* EscolhaTipoCriacao */ = {
+			isa = PBXGroup;
+			children = (
+				87965D7629F71DD1001BC667 /* EscolhaTipoCriacaoViewController.swift */,
+				87965D7829F71DE1001BC667 /* EscolhaTipoCriacaoScreenView.swift */,
+			);
+			path = EscolhaTipoCriacao;
+			sourceTree = "<group>";
+		};
+		87965D802A09ACBA001BC667 /* SuasCompras */ = {
+			isa = PBXGroup;
+			children = (
+				870D89872A1BF36400B3343C /* Cell */,
+				87965D812A09ACCA001BC667 /* SuasComprasScreenView.swift */,
+				87965D832A09ACDA001BC667 /* SuasComprasViewController.swift */,
+			);
+			path = SuasCompras;
 			sourceTree = "<group>";
 		};
 		87ACC53729D6426E00C8A6BA = {
@@ -161,7 +266,7 @@
 				87ACC54229D6426F00C8A6BA /* Travelify */,
 				87ACC54129D6426F00C8A6BA /* Products */,
 				3148BD40D8A9A3C5794E1048 /* Pods */,
-				F03005EF6FCB546930AAC07D /* Frameworks */,
+				BF4318D89D5E83690A4313D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +281,12 @@
 		87ACC54229D6426F00C8A6BA /* Travelify */ = {
 			isa = PBXGroup;
 			children = (
+				874A191D2A2E81E100E7CAF8 /* CriacaoPacote */,
+				870D898A2A1C203F00B3343C /* Favoritos */,
+				87965D802A09ACBA001BC667 /* SuasCompras */,
+				87965D7529F71DBB001BC667 /* EscolhaTipoCriacao */,
+				87965D6829F6F72C001BC667 /* CriacaoHotel */,
+				87ACC5E729DB8D8D00C8A6BA /* CriacaoVoo */,
 				87ACC5E029D6803900C8A6BA /* Models */,
 				87ACC5DB29D679C700C8A6BA /* Mensagens */,
 				87ACC5B929D6605500C8A6BA /* Dados */,
@@ -185,7 +296,6 @@
 				87ACC59029D6529500C8A6BA /* Pacotes */,
 				87ACC58229D6504000C8A6BA /* Hoteis */,
 				87ACC58129D64FDB00C8A6BA /* TelaVendas */,
-				87ACC57C29D64ECD00C8A6BA /* Vendas */,
 				87ACC56D29D64D0000C8A6BA /* Voos */,
 				87ACC56529D64BBE00C8A6BA /* Helpers */,
 				87ACC55C29D649E600C8A6BA /* Cadastro */,
@@ -195,8 +305,6 @@
 				87ACC54C29D6427100C8A6BA /* Assets.xcassets */,
 				87ACC54E29D6427100C8A6BA /* LaunchScreen.storyboard */,
 				87ACC55129D6427100C8A6BA /* Info.plist */,
-				87ACC5E329DA2A6500C8A6BA /* PopupViewController.swift */,
-				87ACC5E529DA2A9800C8A6BA /* PopupScreenView.swift */,
 			);
 			path = Travelify;
 			sourceTree = "<group>";
@@ -246,19 +354,9 @@
 		87ACC56E29D64D2900C8A6BA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				87ACC57829D64E5500C8A6BA /* VoosViewControllerCell.swift */,
 				87ACC57A29D64E6000C8A6BA /* VoosScreenViewCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		87ACC57C29D64ECD00C8A6BA /* Vendas */ = {
-			isa = PBXGroup;
-			children = (
-				87ACC57D29D64F0800C8A6BA /* VendasViewController.swift */,
-				87ACC57F29D64F1600C8A6BA /* VendasScreenView.swift */,
-			);
-			path = Vendas;
 			sourceTree = "<group>";
 		};
 		87ACC58129D64FDB00C8A6BA /* TelaVendas */ = {
@@ -286,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				87ACC58C29D650AF00C8A6BA /* HoteisScreenViewCell.swift */,
-				87ACC58E29D650C000C8A6BA /* HoteisViewControllerCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -306,7 +403,6 @@
 		87ACC59129D6529F00C8A6BA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				87ACC59A29D6592000C8A6BA /* PacotesViewControllerCell.swift */,
 				87ACC59C29D6592B00C8A6BA /* PacotesScreenViewCell.swift */,
 			);
 			path = Cell;
@@ -343,6 +439,8 @@
 		87ACC5AD29D65D8400C8A6BA /* TelaConfirmacao */ = {
 			isa = PBXGroup;
 			children = (
+				87965D892A0DAFA4001BC667 /* ConfirmacaoService.swift */,
+				87965D8B2A0DB23E001BC667 /* ConfirmacaoModel.swift */,
 				87ACC5AE29D65DBB00C8A6BA /* TelaConfirmacaoScreenView.swift */,
 				87ACC5B029D65DC800C8A6BA /* TelaConfirmacaoViewController.swift */,
 			);
@@ -354,6 +452,8 @@
 			children = (
 				87ACC5B829D65FEE00C8A6BA /* Vendedor */,
 				87ACC5B729D65FE300C8A6BA /* Usuario */,
+				87965D852A0C50DB001BC667 /* PerfilModel.swift */,
+				874A192A2A2F756000E7CAF8 /* UpdatePerfilService.swift */,
 			);
 			path = Perfis;
 			sourceTree = "<group>";
@@ -370,6 +470,8 @@
 		87ACC5B829D65FEE00C8A6BA /* Vendedor */ = {
 			isa = PBXGroup;
 			children = (
+				87965D7A29F8AE9F001BC667 /* PerfilVendedorScreenView.swift */,
+				87965D7C29F8AEB4001BC667 /* PerfilVendedorViewController.swift */,
 			);
 			path = Vendedor;
 			sourceTree = "<group>";
@@ -407,7 +509,6 @@
 			isa = PBXGroup;
 			children = (
 				87ACC5C429D6612800C8A6BA /* DadosUsuarioScreenViewCell.swift */,
-				87ACC5C629D6613800C8A6BA /* DadosUsuarioViewControllerCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -416,7 +517,6 @@
 			isa = PBXGroup;
 			children = (
 				87ACC5C929D6616C00C8A6BA /* DadosVendedorScreenViewCell.swift */,
-				87ACC5CB29D6617E00C8A6BA /* DadosVendedorViewControllerCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -442,6 +542,7 @@
 		87ACC5DB29D679C700C8A6BA /* Mensagens */ = {
 			isa = PBXGroup;
 			children = (
+				870D898F2A1EC44200B3343C /* MensagensVendedorCell */,
 				87ACC5DC29D679DF00C8A6BA /* MensagensVendedorViewController.swift */,
 				87ACC5DE29D679EB00C8A6BA /* MensagensVendedorScreenView.swift */,
 			);
@@ -456,10 +557,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F03005EF6FCB546930AAC07D /* Frameworks */ = {
+		87ACC5E729DB8D8D00C8A6BA /* CriacaoVoo */ = {
 			isa = PBXGroup;
 			children = (
-				2DB0F2167C987304B17BD8F9 /* libPods-Travelify.a */,
+				87ACC5E829DB8DA600C8A6BA /* CriacaoVooViewController.swift */,
+				87ACC5EA29DB8DE600C8A6BA /* CriacaoVooScreenView.swift */,
+				87965D6D29F6FDD7001BC667 /* CriacaoVooModel.swift */,
+				87965D7129F70D59001BC667 /* CriacaoVooService.swift */,
+			);
+			path = CriacaoVoo;
+			sourceTree = "<group>";
+		};
+		BF4318D89D5E83690A4313D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				874A19262A2EA01800E7CAF8 /* libiOSDropDown.a */,
+				40753E9936037DCE539AA093 /* libPods-Travelify.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -471,7 +584,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87ACC55429D6427100C8A6BA /* Build configuration list for PBXNativeTarget "Travelify" */;
 			buildPhases = (
-				CED8E1AC27B111AED9D8FEE6 /* [CP] Check Pods Manifest.lock */,
+				5D9B3B3CAC83F3D6DB43B0CD /* [CP] Check Pods Manifest.lock */,
 				87ACC53C29D6426F00C8A6BA /* Sources */,
 				87ACC53D29D6426F00C8A6BA /* Frameworks */,
 				87ACC53E29D6426F00C8A6BA /* Resources */,
@@ -531,7 +644,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CED8E1AC27B111AED9D8FEE6 /* [CP] Check Pods Manifest.lock */ = {
+		5D9B3B3CAC83F3D6DB43B0CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -562,61 +675,78 @@
 			files = (
 				87ACC5B629D65FDD00C8A6BA /* PerfilUsuarioViewController.swift in Sources */,
 				87ACC59D29D6592B00C8A6BA /* PacotesScreenViewCell.swift in Sources */,
+				87965D8A2A0DAFA4001BC667 /* ConfirmacaoService.swift in Sources */,
 				87ACC5C529D6612800C8A6BA /* DadosUsuarioScreenViewCell.swift in Sources */,
 				87ACC57529D64D5E00C8A6BA /* VoosService.swift in Sources */,
-				87ACC5E629DA2A9800C8A6BA /* PopupScreenView.swift in Sources */,
-				87ACC58029D64F1600C8A6BA /* VendasScreenView.swift in Sources */,
+				874A19252A2E826300E7CAF8 /* CriacaoPacoteService.swift in Sources */,
 				87ACC57029D64D3D00C8A6BA /* VoosViewController.swift in Sources */,
 				87ACC5D429D6788100C8A6BA /* ComAnuncioScreenView.swift in Sources */,
 				87ACC59929D6591000C8A6BA /* PacotesModel.swift in Sources */,
 				87ACC5AF29D65DBB00C8A6BA /* TelaConfirmacaoScreenView.swift in Sources */,
+				87965D862A0C50DB001BC667 /* PerfilModel.swift in Sources */,
 				87ACC57729D64D6F00C8A6BA /* VoosModel.swift in Sources */,
 				87ACC5C229D660E500C8A6BA /* DadosUsuarioScreenView.swift in Sources */,
+				870D89862A1BF35C00B3343C /* SuasComprasScreenViewCell.swift in Sources */,
 				87ACC5DD29D679E000C8A6BA /* MensagensVendedorViewController.swift in Sources */,
 				87ACC56729D64BD200C8A6BA /* ServiceError.swift in Sources */,
 				87ACC56C29D64CB300C8A6BA /* LoginModel.swift in Sources */,
-				87ACC58F29D650C000C8A6BA /* HoteisViewControllerCell.swift in Sources */,
+				87965D6A29F6F742001BC667 /* CriacaoHotelViewController.swift in Sources */,
 				87ACC59729D6590600C8A6BA /* PacotesService.swift in Sources */,
+				87965D8C2A0DB23E001BC667 /* ConfirmacaoModel.swift in Sources */,
 				87ACC5B129D65DC800C8A6BA /* TelaConfirmacaoViewController.swift in Sources */,
 				87ACC5DF29D679EB00C8A6BA /* MensagensVendedorScreenView.swift in Sources */,
 				87ACC56229D64A9B00C8A6BA /* CadastroModel.swift in Sources */,
 				87ACC5B429D65FCF00C8A6BA /* PerfilUsuarioScreenView.swift in Sources */,
-				87ACC57E29D64F0800C8A6BA /* VendasViewController.swift in Sources */,
+				87965D6C29F6F74F001BC667 /* CriacaoHotelScreenView.swift in Sources */,
 				87ACC55929D6442400C8A6BA /* LoginScreenView.swift in Sources */,
+				874A19212A2E822600E7CAF8 /* CriacaoPacoteScreenView.swift in Sources */,
+				87965D6E29F6FDD7001BC667 /* CriacaoVooModel.swift in Sources */,
 				87ACC5AB29D65B1900C8A6BA /* TelaInicialScreenView.swift in Sources */,
+				870D898C2A1C205000B3343C /* FavoritosViewController.swift in Sources */,
 				87ACC5E229D6804A00C8A6BA /* UserViewModel.swift in Sources */,
 				87ACC5DA29D6795A00C8A6BA /* SemAnuncioScreenView.swift in Sources */,
 				87ACC5A029D659F300C8A6BA /* UIButton+Extension.swift in Sources */,
 				87ACC54429D6426F00C8A6BA /* AppDelegate.swift in Sources */,
+				87965D7729F71DD1001BC667 /* EscolhaTipoCriacaoViewController.swift in Sources */,
 				87ACC5A929D65B0600C8A6BA /* TelaInicialViewController.swift in Sources */,
+				87965D7B29F8AE9F001BC667 /* PerfilVendedorScreenView.swift in Sources */,
 				87ACC59529D658FC00C8A6BA /* PacotesViewController.swift in Sources */,
 				87ACC56429D64B9000C8A6BA /* CadastroService.swift in Sources */,
 				87ACC5A429D65A1200C8A6BA /* UIViewController+Extension.swift in Sources */,
+				874A191F2A2E81F600E7CAF8 /* CriacaoPacoteViewController.swift in Sources */,
 				87ACC5D029D6619C00C8A6BA /* DadosVendedorViewController.swift in Sources */,
 				87ACC56929D64C6400C8A6BA /* LoginService.swift in Sources */,
-				87ACC5CC29D6617E00C8A6BA /* DadosVendedorViewControllerCell.swift in Sources */,
 				87ACC58929D6508900C8A6BA /* HoteisViewController.swift in Sources */,
 				87ACC55B29D6443100C8A6BA /* LoginViewController.swift in Sources */,
 				87ACC58529D6506000C8A6BA /* HoteisModel.swift in Sources */,
+				870D898E2A1C205A00B3343C /* FavoritosScreenView.swift in Sources */,
+				87965D7429F70E96001BC667 /* CriacaoHotelService.swift in Sources */,
+				87965D7229F70D59001BC667 /* CriacaoVooService.swift in Sources */,
+				87965D822A09ACCA001BC667 /* SuasComprasScreenView.swift in Sources */,
+				87ACC5EB29DB8DE600C8A6BA /* CriacaoVooScreenView.swift in Sources */,
 				87ACC5CA29D6616C00C8A6BA /* DadosVendedorScreenViewCell.swift in Sources */,
 				87ACC5D229D6787500C8A6BA /* ComAnuncioViewController.swift in Sources */,
 				87ACC58B29D6509F00C8A6BA /* HoteisScreenView.swift in Sources */,
 				87ACC54629D6426F00C8A6BA /* SceneDelegate.swift in Sources */,
+				87965D7029F70384001BC667 /* CriacaoHotelModel.swift in Sources */,
+				87ACC5E929DB8DA600C8A6BA /* CriacaoVooViewController.swift in Sources */,
+				874A192B2A2F756000E7CAF8 /* UpdatePerfilService.swift in Sources */,
+				87965D7D29F8AEB4001BC667 /* PerfilVendedorViewController.swift in Sources */,
 				87ACC5D829D6794E00C8A6BA /* SemAnuncioViewController.swift in Sources */,
 				87ACC5A229D65A0000C8A6BA /* UIView+Extension.swift in Sources */,
 				87ACC57329D64D5200C8A6BA /* VoosScreenView.swift in Sources */,
 				87ACC5CE29D6619000C8A6BA /* DadosVendedorScreenView.swift in Sources */,
-				87ACC57929D64E5500C8A6BA /* VoosViewControllerCell.swift in Sources */,
+				874A19232A2E823E00E7CAF8 /* CriacaoPacoteModel.swift in Sources */,
+				870D89912A1EC46600B3343C /* MensagensVendedorScreenViewCell.swift in Sources */,
+				87965D7929F71DE1001BC667 /* EscolhaTipoCriacaoScreenView.swift in Sources */,
 				87ACC5C029D660D300C8A6BA /* DadosUsuarioViewController.swift in Sources */,
 				87ACC57B29D64E6000C8A6BA /* VoosScreenViewCell.swift in Sources */,
 				87ACC58D29D650AF00C8A6BA /* HoteisScreenViewCell.swift in Sources */,
 				87ACC56029D64A1F00C8A6BA /* CadastroViewController.swift in Sources */,
-				87ACC5C729D6613800C8A6BA /* DadosUsuarioViewControllerCell.swift in Sources */,
+				87965D842A09ACDA001BC667 /* SuasComprasViewController.swift in Sources */,
 				87ACC55E29D64A1000C8A6BA /* CadastroScreenView.swift in Sources */,
 				87ACC59329D658F000C8A6BA /* PacotesScreenView.swift in Sources */,
 				87ACC58729D6506A00C8A6BA /* HoteisService.swift in Sources */,
-				87ACC59B29D6592000C8A6BA /* PacotesViewControllerCell.swift in Sources */,
-				87ACC5E429DA2A6500C8A6BA /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,7 +880,7 @@
 		};
 		87ACC55529D6427100C8A6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64D7D2CBDA55C53944CF3FF7 /* Pods-Travelify.debug.xcconfig */;
+			baseConfigurationReference = 665276EC9B1A728DC7566E5A /* Pods-Travelify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -778,7 +908,7 @@
 		};
 		87ACC55629D6427100C8A6BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BFE09144C4628E0FB3AB5E3 /* Pods-Travelify.release.xcconfig */;
+			baseConfigurationReference = A57AADEEE76FBDAEC650A76C /* Pods-Travelify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

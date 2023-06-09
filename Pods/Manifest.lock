@@ -1,16 +1,20 @@
 PODS:
+  - iOSDropDown (0.4.0)
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
+  - iOSDropDown
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - iOSDropDown
     - SwiftLint
 
 SPEC CHECKSUMS:
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: b739ac847d6edab086292f16fb7ff174d4b811de
+PODFILE CHECKSUM: 5182836b3000e4d842dad9d65555d3293bc896c5
 
 COCOAPODS: 1.12.0

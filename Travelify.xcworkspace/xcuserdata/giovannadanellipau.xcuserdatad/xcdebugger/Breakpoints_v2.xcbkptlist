@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9D3DCE84-5984-488D-8D27-5B7BF3C054DF"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E926538-CD5C-4D92-9A7E-67B78D736016"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/TelaCompras/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "callVoo(model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1E926538-CD5C-4D92-9A7E-67B78D736016 - 9cd331e804fa1904"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Any, Travelify.ServiceError&gt;) -&gt; () in Travelify.PopupViewController.callVoo(model: Travelify.ConfirmacaoVooModel) -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "1E926538-CD5C-4D92-9A7E-67B78D736016 - 9cd331e804fa18eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Any, Travelify.ServiceError&gt;) -&gt; () in Travelify.PopupViewController.callVoo(model: Travelify.ConfirmacaoVooModel) -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "460">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20DD3B41-AF2D-4E82-9719-F9D6EA3C7BF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/TelaCompras/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "callVoo(model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20DD3B41-AF2D-4E82-9719-F9D6EA3C7BF6 - 9cd331e804fa1967"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Any, Travelify.ServiceError&gt;) -&gt; () in Travelify.PopupViewController.callVoo(model: Travelify.ConfirmacaoVooModel) -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "20DD3B41-AF2D-4E82-9719-F9D6EA3C7BF6 - 9cd331e804fa1967"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Any, Travelify.ServiceError&gt;) -&gt; () in Travelify.PopupViewController.callVoo(model: Travelify.ConfirmacaoVooModel) -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "316">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F91ACEBA-9611-4F9B-AC3F-D3D9740BC17D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/TelaCompras/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "callUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F91ACEBA-9611-4F9B-AC3F-D3D9740BC17D - e2db7546b6734701"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Any, Travelify.ServiceError&gt;) -&gt; () in Travelify.PopupViewController.callUser() -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "F91ACEBA-9611-4F9B-AC3F-D3D9740BC17D - e2db7546b6734701"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Any, Travelify.ServiceError&gt;) -&gt; () in Travelify.PopupViewController.callUser() -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC6EA631-1419-42F1-B610-82353220E0FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/TelaCompras/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "routeToSuasCompras()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C396CE2-406A-4E25-B407-8BF66F67FBF3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/TelaCompras/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "callUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C396CE2-406A-4E25-B407-8BF66F67FBF3 - 50f73bfc08b777cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Travelify.PopupViewController.callUser() -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "8C396CE2-406A-4E25-B407-8BF66F67FBF3 - 50f73bfc08b777cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Travelify.PopupViewController.callUser() -&gt; ()"
+                  moduleName = "Travelify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giovannadanellipau/Documents/Swift%20/Travelify/Travelify/TelaCompras/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A37BF7A6-A4F8-4064-B8AE-98F69D0FDFA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/CriacaoVoo/CriacaoVooViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "callUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB252870-C903-4027-98CB-1782C4516D66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travelify/CriacaoVoo/CriacaoVooViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "callUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

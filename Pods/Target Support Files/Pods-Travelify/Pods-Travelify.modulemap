@@ -1,0 +1,6 @@
+module Pods_Travelify {
+  umbrella header "Pods-Travelify-umbrella.h"
+
+  export *
+  module * { export * }
+}
