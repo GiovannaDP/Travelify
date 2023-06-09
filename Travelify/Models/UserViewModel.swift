@@ -14,3 +14,9 @@ struct UserViewModel {
         static var message: String = ""
     }
 }
+
+enum Flow {
+    case primeiraCompra
+    case suasCompras
+    case suasVendas
+}

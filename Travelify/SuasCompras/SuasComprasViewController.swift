@@ -48,9 +48,7 @@ class SuasComprasViewController: UIViewController {
     }
     
     @objc func leftItemTapped() {
-        if let telaAnterior = navigationController?.viewControllers.first(where: { $0 is TelaInicialViewController }) {
-            navigationController?.popToViewController(telaAnterior, animated: true)
-        }
+        popToTelaInicialCompras()
     }
     
     func configuraTableView() {
@@ -59,29 +57,23 @@ class SuasComprasViewController: UIViewController {
         customView?.tableView.delegate = self
     }
     
-    func sairDoApp() {
-        if let telaAnterior = navigationController?.viewControllers.first(where: { $0 is LoginViewController }) {
-            navigationController?.popToViewController(telaAnterior, animated: true)
-        }
-    }
-    
     func irParaDetalhesVoo(_ viagem: VoosModel.Voo?) {
         if let viagemSelecionada = viagem {
-            let vooController = VoosViewController.instanciar(viagemSelecionada)
+            let vooController = VoosViewController.instanciar(viagemSelecionada, flow: .suasCompras)
             navigationController?.pushViewController(vooController, animated: true)
         }
     }
     
     func irParaDetalhesHotel(_ viagem: HoteisModel.Hotel?) {
         if let viagemSelecionada = viagem {
-            let hotelController = HoteisViewController.instanciar(viagemSelecionada)
+            let hotelController = HoteisViewController.instanciar(viagemSelecionada, flow: .suasCompras)
             navigationController?.pushViewController(hotelController, animated: true)
         }
     }
     
     func irParaDetalhesPacote(_ viagem: PacotesModel.Pacote?) {
         if let viagemSelecionada = viagem {
-            let pacoteController = PacotesViewController.instanciar(viagemSelecionada)
+            let pacoteController = PacotesViewController.instanciar(viagemSelecionada, flow: .suasCompras)
             navigationController?.pushViewController(pacoteController, animated: true)
         }
     }
@@ -154,7 +146,7 @@ extension SuasComprasViewController: UITableViewDataSource {
 extension SuasComprasViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
+        switch indexPath.section {
         case 0:
             let viewModel = voosModel[indexPath.row]
             irParaDetalhesVoo(viewModel)
@@ -168,6 +160,4 @@ extension SuasComprasViewController: UITableViewDelegate{
             break
         }
     }
-    
 }
-
