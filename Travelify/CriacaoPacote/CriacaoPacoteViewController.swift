@@ -83,6 +83,26 @@ class CriacaoPacoteViewController: UIViewController {
         let vc = ComAnuncioViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func callUser() {
+        let model = LoginModel(password: UserViewModel.body.password, username: UserViewModel.body.username)
+        
+        do {
+            let service = LoginService()
+            service.apiCall(model: model, callback: { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case let .failure(error):
+                        print(error)
+                    case let .success(data):
+                        let userResponse = data as! UserResponse
+                        UserViewModel.body = userResponse
+                        self.navigateToVendas()
+                    }
+                }
+            })
+        }
+    }
 
     @objc func cadastro(_ sender: UIButton) {
             self.getData()
@@ -99,13 +119,10 @@ class CriacaoPacoteViewController: UIViewController {
                         print(error)
                     case let .success(data):
                         print(data)
-                        self.navigateToVendas()
+                        self.callUser()
                     }
                 }
             })
         }
     }
 }
-
-
-
