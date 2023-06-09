@@ -17,11 +17,7 @@ class MensagensVendedorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildView()
-        
-        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
-        rightItem.tintColor = .white
-        
-        self.navigationItem.rightBarButtonItem = rightItem
+        configuraNavBar()        
         configuraTableView()
     }
     
@@ -35,9 +31,22 @@ class MensagensVendedorViewController: UIViewController {
         customView = view as? MensagensVendedorScreenView
     }
     
+    func configuraNavBar() {
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "list.bullet"), style: .plain, target: self, action: #selector(rightItemTapped))
+        rightItem.tintColor = .white
+        let leftItem = UIBarButtonItem(image: UIImage(systemName: "house.fill"), style: .plain, target: self, action: #selector(leftItemTapped))
+        leftItem.tintColor = .white
+        
+        self.navigationItem.leftBarButtonItem = leftItem
+        self.navigationItem.rightBarButtonItem = rightItem
+    }
+    
     @objc func rightItemTapped() {
-        debugPrint("teste")
-        navigateToMenuUsuario()
+        navigateToMenuVendedor()
+    }
+    
+    @objc func leftItemTapped() {
+        popToTelaInicialVendas()
     }
     
     func configuraTableView() {
@@ -54,21 +63,21 @@ class MensagensVendedorViewController: UIViewController {
     
     func irParaDetalhesVoo(_ viagem: VoosModel.Voo?) {
         if let viagemSelecionada = viagem {
-            let vooController = VoosViewController.instanciar(viagemSelecionada)
+            let vooController = VoosViewController.instanciar(viagemSelecionada, flow: .suasVendas)
             navigationController?.pushViewController(vooController, animated: true)
         }
     }
     
     func irParaDetalhesHotel(_ viagem: HoteisModel.Hotel?) {
         if let viagemSelecionada = viagem {
-            let hotelController = HoteisViewController.instanciar(viagemSelecionada)
+            let hotelController = HoteisViewController.instanciar(viagemSelecionada, flow: .suasVendas)
             navigationController?.pushViewController(hotelController, animated: true)
         }
     }
     
     func irParaDetalhesPacote(_ viagem: PacotesModel.Pacote?) {
         if let viagemSelecionada = viagem {
-            let pacoteController = PacotesViewController.instanciar(viagemSelecionada)
+            let pacoteController = PacotesViewController.instanciar(viagemSelecionada, flow: .suasVendas)
             navigationController?.pushViewController(pacoteController, animated: true)
         }
     }
@@ -85,7 +94,7 @@ extension MensagensVendedorViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -107,4 +116,3 @@ extension MensagensVendedorViewController: UITableViewDelegate{
         debugPrint("clicou mensagem")
     }
 }
-
