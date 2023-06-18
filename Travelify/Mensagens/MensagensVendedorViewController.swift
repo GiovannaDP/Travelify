@@ -23,6 +23,14 @@ class MensagensVendedorViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if messagesModel.isEmpty {
+            customView?.tableView.isHidden = true
+            customView?.semAnuncioView.isHidden = false
+        } else {
+            customView?.tableView.isHidden = false
+            customView?.semAnuncioView.isHidden = true
+        }
         customView?.tableView.reloadData()
     }
     
