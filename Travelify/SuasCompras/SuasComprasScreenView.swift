@@ -37,11 +37,38 @@ class SuasComprasScreenView: UIView {
         label.textColor = .white
         return label
     }()
+    
+    lazy var semAnuncioView: UIView = {
+        let view = UIView(frame: UIScreen.main.bounds)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
+        return view
+    }()
+    
+    lazy var semAnuncioLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.text = "Você não possui nenhuma compra"
+        label.font = UIFont(name: "IowanOldStyle-Bold", size: 20)
+        label.textColor = .black
+        return label
+    }()
+    
+    lazy var imageView: UIImageView = {
+        let view = UIImageView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.contentMode = .scaleAspectFit
+        view.image = UIImage(systemName: "exclamationmark.circle.fill")
+        view.tintColor = .lightGray
+        return view
+    }()
 
     lazy var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.backgroundColor = .white
+        table.isHidden = true
         return table
     }()
         
@@ -49,6 +76,10 @@ class SuasComprasScreenView: UIView {
         addSubview(mainView)
         mainView.addSubview(titleLabel)
         mainView.addSubview(tableView)
+        
+        mainView.addSubview(semAnuncioView)
+        semAnuncioView.addSubview(semAnuncioLabel)
+        semAnuncioView.addSubview(imageView)
     }
     
     func configuraConstraints(){
@@ -65,6 +96,19 @@ class SuasComprasScreenView: UIView {
             self.tableView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor),
             self.tableView.trailingAnchor.constraint(equalTo: mainView.trailingAnchor),
             self.tableView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor),
+            
+            self.semAnuncioView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
+            self.semAnuncioView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor),
+            self.semAnuncioView.trailingAnchor.constraint(equalTo: mainView.trailingAnchor),
+            self.semAnuncioView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor),
+            
+            self.semAnuncioLabel.centerXAnchor.constraint(equalTo: semAnuncioView.centerXAnchor),
+            self.semAnuncioLabel.centerYAnchor.constraint(equalTo: semAnuncioView.centerYAnchor, constant: -100),
+            
+            self.imageView.topAnchor.constraint(equalTo: semAnuncioLabel.bottomAnchor, constant: 10),
+            self.imageView.leadingAnchor.constraint(equalTo: semAnuncioView.leadingAnchor),
+            self.imageView.trailingAnchor.constraint(equalTo: semAnuncioView.trailingAnchor),
+            self.imageView.heightAnchor.constraint(equalToConstant: 120)
             ])
         }
 }

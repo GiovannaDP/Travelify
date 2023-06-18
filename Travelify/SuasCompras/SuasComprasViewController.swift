@@ -25,6 +25,15 @@ class SuasComprasViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if !UserViewModel.body.flights.isEmpty || !UserViewModel.body.hotels.isEmpty || !UserViewModel.body.packages.isEmpty {
+            customView?.tableView.isHidden = false
+            customView?.semAnuncioView.isHidden = true
+        } else {
+            customView?.tableView.isHidden = true
+            customView?.semAnuncioView.isHidden = false
+        }
+        
         customView?.tableView.reloadData()
     }
     
